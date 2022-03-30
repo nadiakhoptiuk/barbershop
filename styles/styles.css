@@ -7,7 +7,7 @@
   --transparent-text-color-input: rgba(157, 164, 189, 0.4);
   --grey-text-color: #9da4bd;
 
-  --booking-section-bgd-color: rgba(25, 28, 38, 1);
+  --booking-section-bgd-color: #191c26;
 
   --accent-color: #ff6c00;
 }
@@ -28,6 +28,7 @@
 /* list styles */
 .list {
   list-style: none;
+  padding-left: 0;
 }
 
 /* button style */
@@ -50,6 +51,12 @@
 
 .button.first {
   color: var(--first-title-btn-color);
+}
+
+.link-social {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 }
 
 /* section title styles */
@@ -112,10 +119,66 @@
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/* Price list section */
+.price.list {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
   color: var(--grey-text-color);
 }
 
-/* booking section */
-.booking {
+/* Masters section */
+.masters .name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.masters .proffession {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* Gallery section */
+
+/* Booking section */
+.booking,
+.contacts {
   background-color: var(--booking-section-bgd-color);
+}
+
+/* Contacts section */
+.contacts .address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}
+
+.top-title.schedule {
+  color: var(--first-title-btn-color);
+}
+
+.bottom-title.schedule {
+  color: var(--grey-text-color);
+}
+
+/* Footer section */
+.copyright {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--grey-text-color);
+}
+
+.footer .link-social {
+  color: var(--grey-text-color);
 }
