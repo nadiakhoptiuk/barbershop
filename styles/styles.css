@@ -13,6 +13,7 @@
 }
 
 .page {
+  margin: 0;
   color: var(--primary-text-color);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -33,7 +34,8 @@
 
 /* button style */
 .button {
-  padding: 12px 20px;
+  min-width: 160px;
+  height: 40px;
 
   font-family: inherit;
   font-weight: inherit;
@@ -44,9 +46,9 @@
   color: inherit;
 
   border: 1px solid var(--accent-color);
+  background-color: transparent;
   border-radius: 25px;
   cursor: pointer;
-  background-color: transparent;
 }
 
 .button.first {
@@ -72,6 +74,68 @@
   color: var(--first-title-btn-color);
 }
 
+.container {
+  margin: 0 auto;
+  width: 1238px;
+  padding: 0 19px;
+  outline: 1px solid red;
+}
+
+/*------------ Header section ------------*/
+.header {
+  background-color: #757575;
+}
+
+.header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 66px;
+  height: 55px;
+  margin-right: 70px;
+}
+
+.nav {
+  display: flex;
+}
+
+.main-nav.list {
+  display: flex;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--first-title-btn-color);
+}
+
+.main-nav > .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.conect-container {
+  margin-left: auto;
+}
+
+.tel.link {
+  margin-right: 40px;
+
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--first-title-btn-color);
+}
+
+/*----------- HERO SECTION -----------*/
+
 .hero-title {
   font-size: 72px;
   line-height: 1.18;
@@ -81,16 +145,6 @@
   color: var(--white-text-color);
 }
 
-.tel.link {
-  color: var(--white-text-color);
-}
-
-.main-nav .link:hover,
-.main-nav .link:focus {
-  color: var(--accent-color);
-}
-
-/* hero section */
 .hero .link:hover,
 .hero .link:focus {
   color: var(--accent-color);
