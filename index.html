@@ -8,44 +8,62 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 <body class="page">
-    <header class="header section">
-        <div class="container">
-            <nav class="nav">
-                <a href="" class="logo">
-                    <img src="./images/logo.svg" alt="logotype" width="66" height="56">
-                </a>
-            
-                <ul class="main-nav list">
-                    <li class="item"><a href="" class="link">О нас</a></li>
-                    <li class="item"><a href="" class="link">Услуги и цены</a></li>
-                    <li class="item"><a href="" class="link">Мастера</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
-                </ul>
-            </nav>
-            
-            <div class="conect-container">
-                <a href="tel:+380441111111" class="tel link">+38 044 111 11 11</a>
-                <button class="button first" type="button">онлайн-запись</button>
+
+    <!-- Header -->
+    <header class="header">
+            <div class="header__container container">
+                <!-- Main navigation -->
+                <nav class="nav">
+                    <a href="./index.html" class="logo">
+                        <svg width="66" height="56">
+                            <use href="./images/sprite.svg#logo" aria-label="logotype"></use>
+                        </svg>
+                    </a>
+                
+                    <ul class="main-nav">
+                        <li class="main-nav__item"><a href="" class="main-nav__link">О нас</a></li>
+                        <li class="main-nav__item"><a href="" class="main-nav__link">Услуги и цены</a></li>
+                        <li class="main-nav__item"><a href="" class="main-nav__link">Мастера</a></li>
+                        <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__contacts">
+                    <a href="tel:+380441111111" class="header__tel">+38 044 111 11 11</a>
+                    <button class="btn--light header__btn" type="button">онлайн-запись</button>
+                </div>
             </div>
-        </div>
     </header>
 
     <main>
         <!-- Hero section -->
-        <section class="hero section">
-            <ul class="list">
-                <li><a href="" target="_blank" rel="noopener noreferrer" class="link-social link">Instagram</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer" class="link-social link">Youtube</a></li>
-            </ul>
-
-            <p lang="en" class="top-title">A hair salon for men in Kyiv</p>
-            <h1 class="section-title hero-title first" lang="en">BarberShop</h1>
-            <p class="bottom-title">Мы эксперты в модных мужских стрижках.
-            Работаем быстро, осторожно и со вкусом.</p>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="company-socials__wrap">
+                    <ul class="company-socials">
+                        <li class="company-socials__item">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="company-socials__link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="company-socials__item">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="company-socials__link">
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="hero-content">
+                    <p lang="en" class="hero-content__top-title">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-content__title" lang="en">BarberShop</h1>
+                    <p class="hero-content__bottom-title">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+                </div>
+            </div>
         </section>
 
         <!-- About us section -->

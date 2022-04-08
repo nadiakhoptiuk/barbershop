@@ -1,0 +1,51 @@
+%list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+%section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+%btn {
+    min-width: 160px;
+    height: 40px;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: inherit;
+
+    border: 1px solid $accentColor;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+
+    @include transitioned(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+    }
+}
+
+%top-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+%bottom-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+}

@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page {
+    margin: 0;
+    color: $primaryTextColor;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    background-color: $primaryBgdColor;
+    color: $primaryTextColor;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+
+.section-title {
+    font-family: "Raleway", sans-serif;
+    /* font-weight: 700; - за умовчуванням у заголовків */
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.top-title {
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+}

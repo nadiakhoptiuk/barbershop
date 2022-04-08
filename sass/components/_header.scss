@@ -1,0 +1,43 @@
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.nav {
+    @include centeredFlex;
+}
+
+.header__contacts {
+    margin-left: auto;
+    @include centeredFlex;
+}
+
+.header__tel {
+    margin-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $lightTitleBtnColor;
+
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.header__btn {
+    margin-right: 8px;
+}

@@ -1,0 +1,30 @@
+.main-nav {
+    @extend %list;
+
+    display: flex;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: $lightTitleBtnColor;
+}
+
+.main-nav__item {
+    display: block;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.main-nav__link {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}

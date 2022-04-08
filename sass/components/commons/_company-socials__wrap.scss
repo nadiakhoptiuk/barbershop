@@ -1,0 +1,47 @@
+.company-socials__wrap {
+    display: flex;
+    align-items: flex-end;
+    width: 93px;
+    height: 680px;
+
+    padding-left: 26px;
+    padding-bottom: 40px;
+}
+
+.company-socials {
+    @extend %list;
+
+    @include centeredFlex;
+
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $primaryTextColor;
+
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: left bottom;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        margin-right: 40px;
+        background-color: $primaryTextColor;
+    }
+}
+
+
+.company-socials__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+.company-socials__link {
+
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}

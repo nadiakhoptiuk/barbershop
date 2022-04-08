@@ -1,0 +1,9 @@
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transitioned($property) {
+    transition: $property 300ms ease-in-out;
+}
