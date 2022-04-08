@@ -2,7 +2,7 @@
     padding: 272px 0px 206px 96px;
     flex-grow: 1;
 
-    background-image: url('../images/hero.jpg');
+    background-image: url('../../images/hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,27 +20,23 @@
     color: $lightTitleBtnColor;
 }
 
-.hero-content__top-title {
-    @extend %top-title;
+.hero-content__pre-title {
+    @extend %pre-title;
     margin-bottom: 20px;
 
-    color: $topTitleColorHero;
+    color: $preTitleColorHero;
     display: flex;
     align-items: center;
 
     &::before {
-        display: inline-block;
         width: 64px;
-        height: 1px;
         margin-right: 21px;
-
         content: '';
-        background-color: currentColor;
     }
 }
 
-.hero-content__bottom-title {
-    @extend %bottom-title;
+.hero-content__after-title {
+    @extend %after-title;
 
     width: 406px;
     color: $greyTextColor;

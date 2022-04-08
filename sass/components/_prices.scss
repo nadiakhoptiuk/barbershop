@@ -1,0 +1,25 @@
+.prices {
+    @extend %section;
+    margin: 0 auto;
+
+    background-image: url('../../images/bg-price.png');
+    background-color: $pricesBgdColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+}
+
+.prices__pre-title--secondary {
+    @extend %pre-title;
+
+    color: $preTitleColorHero;
+    margin-bottom: 20px;
+}
+
+.prices__title {
+    @extend %section-title;
+
+    color: $lightTitleBtnColor;
+    margin-bottom: 44px;
+}
