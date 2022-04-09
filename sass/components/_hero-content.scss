@@ -2,7 +2,7 @@
     padding: 272px 0px 206px 96px;
     flex-grow: 1;
 
-    background-image: url('../../images/hero.jpg');
+    background-image: linear-gradient(to right, $heroGradientColor, $heroGradientColor), url('../../images/hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
