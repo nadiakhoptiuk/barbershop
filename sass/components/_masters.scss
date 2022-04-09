@@ -1,0 +1,64 @@
+.masters {
+    @extend %section;
+
+    background-color: $secondaryBgdColor;
+}
+
+.masters__pre-title--primary {
+    @extend %pre-title;
+    
+    color: $primaryTextColor;
+    margin-bottom: 20px;
+}
+
+.masters__title--primary {
+    @extend %section-title;
+        
+    color: $primaryTextColor;
+    margin-bottom: 44px;
+}
+
+.masters__list {
+    @extend %list;
+
+    display: flex;
+}
+
+.masters__item {
+    width: calc((100% - 30px * 2) / 3);
+
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.masters__photo {
+    @extend %img;
+}
+
+.masters__wrap {
+    padding: 30px 82px 0 82px;
+}
+
+.masters__name {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+}
+
+.masters__experience {
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $accentColor;
+}

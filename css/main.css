@@ -1,20 +1,20 @@
-.main-nav, .company-socials, .about-us__photos, .prices__list {
+.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
-.about-us__img {
+.about-us__img, .masters__photo {
   display: block;
 }
 
-.prices {
+.prices, .masters {
   padding-top: 130px;
   padding-bottom: 130px;
 }
 
-.about-us__title--primary, .prices__title {
+.about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -43,7 +43,9 @@
   background-color: #ff6c00;
 }
 
-.hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary {
+.hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary, .benefits__pre-title--primary, .masters__pre-title--primary {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -52,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.hero-content__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title--secondary::before {
+.hero-content__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title--secondary::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before {
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -61,7 +63,7 @@
   background-color: currentColor;
 }
 
-.hero-content__after-title, .about-us__after-title--secondary {
+.hero-content__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -494,7 +496,7 @@ a {
 .hero-content {
   padding: 272px 0px 206px 96px;
   flex-grow: 1;
-  background-image: url("../../images/hero.jpg");
+  background-image: url("./images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -579,7 +581,7 @@ a {
 
 .prices {
   margin: 0 auto;
-  background-image: url("../../images/bg-price.png");
+  background-image: url("./images/bg-price.png");
   background-color: #111319;
   background-size: cover;
   background-position: center;
@@ -648,5 +650,191 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.benefits {
+  padding-top: 114px;
+  padding-bottom: 172px;
+}
+
+.benefits__container {
+  display: flex;
+  padding-right: 120px;
+}
+
+.benefits__pre-title--primary {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.benefits__title--primary {
+  color: #303030;
+  margin-bottom: 20px;
+  width: 483px;
+}
+
+.benefits__after-title--secondary {
+  width: 500px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achievements__box--left {
+  padding-left: 145px;
+  padding-right: 130px;
+}
+
+.achievements__item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  color: #303030;
+  background-color: #F7F7F7;
+  outline: 1px solid blue;
+}
+
+.achievements__item:nth-child(2n-1) {
+  margin-right: 30px;
+}
+
+.achievements__item:nth-child(-n+2) {
+  margin-bottom: 30px;
+}
+
+.achievements__item:nth-child(2n) {
+  transform: translateY(30px);
+}
+
+.achievements__wrap {
+  width: 122px;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.achievements__count {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  display: flex;
+}
+
+.achievements__count::after {
+  content: '+';
+  color: #ff6c00;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-left: 2px;
+  align-self: start;
+}
+
+.achievements__desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.masters {
+  background-color: #F7F7F7;
+}
+
+.masters__pre-title--primary {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.masters__title--primary {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.masters__list {
+  display: flex;
+}
+
+.masters__item {
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.masters__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.masters__wrap {
+  padding: 30px 82px 0 82px;
+}
+
+.masters__name {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters__experience {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.masters-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masters-socials__item {
+  width: 44px;
+  height: 44px;
+  border-color: #ffffff;
+}
+
+.masters-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.masters-socials__link {
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms ease-in-out;
+}
+
+.masters-socials__link:hover, .masters-socials__link:focus {
+  background-color: #ff6c00;
+}
+
+.masters-socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #303030;
+  transition: fill 300ms ease-in-out;
+}
+
+.masters-socials__link:hover .masters-socials__icon,
+.masters-socials__link:focus .masters-socials__icon {
+  fill: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
