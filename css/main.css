@@ -1,15 +1,15 @@
-.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials {
+.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
-.about-us__img, .masters__photo {
+.about-us__img, .masters__photo, .gallery__img {
   display: block;
 }
 
-.prices, .masters {
+.prices, .masters, .gallery {
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -43,7 +43,7 @@
   background-color: #ff6c00;
 }
 
-.hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary, .benefits__pre-title--primary, .masters__pre-title--primary {
+.hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.hero-content__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title--secondary::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before {
+.hero-content__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title--secondary::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before, .gallery__pre-title--primary::before {
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -361,6 +361,11 @@ a {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 .header {
@@ -823,7 +828,7 @@ a {
 }
 
 .masters-socials__link:hover, .masters-socials__link:focus {
-  background-color: #ff6c00;
+  background-color: rgba(157, 164, 189, 0.4);
 }
 
 .masters-socials__icon {
@@ -835,6 +840,23 @@ a {
 
 .masters-socials__link:hover .masters-socials__icon,
 .masters-socials__link:focus .masters-socials__icon {
-  fill: #ffffff;
+  fill: #ff6c00;
+}
+
+.gallery__pre-title--primary {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery__list {
+  display: flex;
+}
+
+.gallery__item {
+  width: calc((100% - 3 * 30) / 4);
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -27,7 +27,7 @@
 
     &:hover,
     &:focus {
-        background-color: $accentColor;
+        background-color: $transparentTextColorInput;
     }
 }
 
@@ -40,6 +40,6 @@
     
     .masters-socials__link:hover &,
     .masters-socials__link:focus & {
-        fill: $lightTitleBtnColor;
+        fill: $accentColor;
     }
 }

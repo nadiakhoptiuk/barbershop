@@ -40,3 +40,8 @@ a {
     text-transform: uppercase;
     
 }
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
