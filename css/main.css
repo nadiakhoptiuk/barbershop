@@ -1,4 +1,4 @@
-.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list {
+.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list, .contacts__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -9,12 +9,12 @@
   display: block;
 }
 
-.prices, .masters, .gallery {
+.prices, .masters, .gallery, .booking, .contacts {
   padding-top: 130px;
   padding-bottom: 130px;
 }
 
-.about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary {
+.about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary, .booking__title, .contacts__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -43,7 +43,7 @@
   background-color: #ff6c00;
 }
 
-.hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary {
+.hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary, .contacts__pre-title {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.hero-content__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title--secondary::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before, .gallery__pre-title--primary::before {
+.hero-content__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title--secondary::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before, .gallery__pre-title--primary::before, .contacts__pre-title::before {
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -63,10 +63,30 @@
   background-color: currentColor;
 }
 
-.hero-content__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary {
+.hero-content__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary, .contacts__after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
+}
+
+.booking-form__input, .booking-form__textarea {
+  padding: 8px;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.booking-form__field:hover .booking-form__input, .booking-form__field:hover .booking-form__textarea,
+.booking-form__text-field:hover .booking-form__input,
+.booking-form__text-field:hover .booking-form__textarea {
+  color: currentColor;
+  border-color: currentColor;
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -858,5 +878,158 @@ a {
 
 .gallery__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.booking__wrap {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #191c26;
+  background-image: url(../../images/Bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: calc((100% / 2) - 15px);
+}
+
+.booking__container {
+  display: flex;
+}
+
+.booking {
+  width: calc((100% / 2) + 15px);
+}
+
+.booking__title {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.booking-form {
+  margin-bottom: 44px;
+}
+
+.booking-form__wrap {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.booking-form__field {
+  position: relative;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form__field:hover {
+  color: #ffffff;
+}
+
+.booking-form__field:not(:last-child) {
+  margin-right: 30px;
+}
+
+.booking-form__input {
+  height: 31px;
+}
+
+.booking-form__input--name {
+  width: 270px;
+}
+
+.booking-form__input--tel {
+  width: 260px;
+}
+
+.booking-form__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform 300ms ease-in-out;
+}
+
+.booking-form__input:focus + .booking-form__label,
+.booking-form__input:not(:placeholder-shown) + .booking-form__label {
+  transform: translateY(-35px);
+  color: #ffffff;
+}
+
+.booking-form__text-field {
+  position: relative;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form__text-field:hover {
+  color: #ffffff;
+}
+
+.booking-form__textarea {
+  height: 76px;
+  width: 560px;
+  padding: 8px;
+  resize: none;
+}
+
+.booking-form__textarea::placeholder {
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.contacts {
+  width: calc((100% / 2) - 15px);
+  padding-left: 100px;
+}
+
+.contacts__title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts__list {
+  width: 270px;
+  margin-bottom: 70px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.contacts__pre-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts__pre-title::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
+.contacts__after-title {
+  color: #9da4bd;
 }
 /*# sourceMappingURL=main.css.map */

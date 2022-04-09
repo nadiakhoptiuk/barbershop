@@ -74,3 +74,24 @@
     font-size: 18px;
     line-height: 1.67;
 }
+
+%inputs {
+    padding: 8px;
+
+    font-style: normal;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $lightTitleBtnColor;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $transparentTextColorInput;
+
+    .booking-form__field:hover &,
+    .booking-form__text-field:hover & {
+        color: currentColor;
+        border-color: currentColor;
+    }
+}
