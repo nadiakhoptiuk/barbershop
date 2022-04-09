@@ -95,3 +95,33 @@
         border-color: currentColor;
     }
 }
+
+
+// socials
+%company-socials {
+    @extend %list;
+
+    @include centeredFlex;
+
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $primaryTextColor;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        margin-right: 40px;
+        background-color: $primaryTextColor;
+    }
+}
+
+%company-socials__link {
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}

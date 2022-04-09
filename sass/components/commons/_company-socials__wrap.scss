@@ -1,3 +1,5 @@
+
+// socials at hero section
 .company-socials__wrap {
     display: flex;
     align-items: flex-end;
@@ -8,40 +10,28 @@
     padding-bottom: 40px;
 }
 
-.company-socials {
-    @extend %list;
-
-    @include centeredFlex;
-
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: $primaryTextColor;
-
+.company-socials--hero {
+    @extend %company-socials;
+   
     transform: rotate(-90deg) translateY(100%);
     transform-origin: left bottom;
-
-    &::before {
-        content: '';
-        width: 60px;
-        height: 1px;
-        margin-right: 40px;
-        background-color: $primaryTextColor;
-    }
 }
-
 
 .company-socials__item:not(:last-child) {
     margin-right: 40px;
 }
 
 
-.company-socials__link {
+.company-socials__link--hero {
+    @extend %company-socials__link;
+}
 
-    @include transitioned(color);
+// socials at footer
+.company-socials--footer {
+    @extend %company-socials;
+    margin-left: auto;
+}
 
-    &:hover,
-    &:focus {
-        color: $accentColor;
-    }
+.company-socials__link--footer {
+    @extend %company-socials__link;
 }
