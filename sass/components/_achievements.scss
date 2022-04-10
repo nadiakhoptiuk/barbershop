@@ -2,11 +2,12 @@
     @extend %list;
     display: flex;
     flex-wrap: wrap;
+    width: 370px;
 }
 
 
 .achievements__box--left {
-    padding-left: 145px;
+    padding-left: 100px;
     padding-right: 130px;
 }
 
@@ -17,7 +18,6 @@
     padding: 20px 24px;
     color: $primaryTextColor;
     background-color: $secondaryBgdColor;
-    outline: 1px solid blue;
 
     &:nth-child(2n-1) {
         margin-right: 30px;

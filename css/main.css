@@ -689,7 +689,6 @@ a {
 
 .benefits__container {
   display: flex;
-  padding-right: 120px;
 }
 
 .benefits__pre-title--primary {
@@ -712,10 +711,11 @@ a {
 .achievements {
   display: flex;
   flex-wrap: wrap;
+  width: 370px;
 }
 
 .achievements__box--left {
-  padding-left: 145px;
+  padding-left: 100px;
   padding-right: 130px;
 }
 
@@ -725,7 +725,6 @@ a {
   padding: 20px 24px;
   color: #303030;
   background-color: #F7F7F7;
-  outline: 1px solid blue;
 }
 
 .achievements__item:nth-child(2n-1) {
