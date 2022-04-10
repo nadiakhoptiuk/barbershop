@@ -24,6 +24,9 @@
 
 .company-socials__link--hero {
     @extend %company-socials__link;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
 }
 
 // socials at footer
@@ -34,4 +37,7 @@
 
 .company-socials__link--footer {
     @extend %company-socials__link;
+
+        padding-top: 57px;
+        padding-bottom: 55px;
 }
