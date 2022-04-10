@@ -1,69 +1,68 @@
 .achievements {
-    @extend %list;
-    display: flex;
-    flex-wrap: wrap;
-    width: 370px;
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
 }
 
-
 .achievements__box--left {
-    padding-left: 100px;
-    padding-right: 130px;
+  padding-left: 100px;
+  padding-right: 130px;
 }
 
 .achievements__item {
-    width: 170px;
-    height: 133px;
+  width: 170px;
+  height: 133px;
 
-    padding: 20px 24px;
-    color: $primaryTextColor;
-    background-color: $secondaryBgdColor;
+  padding: 20px 24px;
+  color: $primaryTextColor;
+  background-color: $secondaryBgdColor;
 
-    &:nth-child(2n-1) {
-        margin-right: 30px;
-    }
+  &:nth-child(2n-1) {
+    margin-right: 30px;
+  }
 
-    &:nth-child(-n+2) {
-        margin-bottom: 30px;
-    }
+  &:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 
-    &:nth-child(2n) {
-        transform: translateY(30px);
-    }
+  &:nth-child(2n) {
+    transform: translateY(30px);
+  }
 }
 
 .achievements__wrap {
-    width: 122px;
-    height: 93px;
-    
-    @include centeredFlex;
-    flex-wrap: wrap;
-    text-align: center;
+  width: 122px;
+  height: 93px;
+
+  @include centeredFlex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .achievements__count {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.36;
-    letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
 
-    display: flex;
+  display: flex;
 
-    &::after {
-        content: '+';
-        color: $accentColor;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.38;
-        margin-left: 2px;
-        align-self: start;
-    }
+  &::after {
+    content: "+";
+    color: $accentColor;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    margin-left: 2px;
+    align-self: start;
+  }
 }
 
 .achievements__desc {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }
