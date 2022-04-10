@@ -1103,12 +1103,6 @@ a {
   margin-right: 16px;
   fill: #9da4bd;
   transform: scale(1);
-  transition: transform 300ms ease-in-out;
-}
-
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
-  transform: scale(1.2);
 }
 
 .contacts__pre-title {

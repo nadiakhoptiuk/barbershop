@@ -53,13 +53,6 @@
     margin-right: 16px;
     fill: $greyTextColor;
     transform: scale(1);
-
-    @include transitioned(transform);
-
-    .contacts__link:hover &,
-    .contacts__link:focus & {
-        transform: scale(1.2);
-    }
 }
 
 
