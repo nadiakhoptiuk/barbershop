@@ -36,11 +36,13 @@
   background-color: transparent;
   border-radius: 25px;
   cursor: pointer;
-  transition: background-color 300ms ease-in-out;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .btn--light:hover, .btn--dark:hover, .about-us__btn:hover, .prices__btn:hover, .btn--light:focus, .btn--dark:focus, .about-us__btn:focus, .prices__btn:focus {
   background-color: #ff6c00;
+  transform: scale(1.2);
 }
 
 .hero-content__pre-title, .about-us__pre-title--primary, .prices__pre-title--secondary, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary, .contacts__pre-title {
@@ -108,11 +110,14 @@
 }
 
 .company-socials__link--hero, .company-socials__link--footer {
-  transition: color 300ms ease-in-out;
+  display: block;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .company-socials__link--hero:hover, .company-socials__link--footer:hover, .company-socials__link--hero:focus, .company-socials__link--footer:focus {
   color: #ff6c00;
+  transform: scale(1.2);
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -446,11 +451,13 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
-  transition: color 300ms ease-in-out;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .header__tel:hover, .header__tel:focus {
   color: #ff6c00;
+  transform: scale(1.2);
 }
 
 .header__btn {
@@ -461,11 +468,17 @@ a {
   width: 66px;
   height: 55px;
   margin-right: 67px;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.logo:hover, .logo:focus {
+  transform: scale(1.2);
 }
 
 .logo--anchor {
   position: fixed;
-  bottom: 40px;
+  bottom: 130px;
   right: 40px;
   z-index: 100;
   width: 8vw;
@@ -473,14 +486,16 @@ a {
   background-color: rgba(157, 164, 189, 0.4);
   opacity: 0.5;
   border-radius: 50%;
+  transform: scale(1);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 .logo--anchor:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .logo__icon--anchor {
@@ -513,11 +528,13 @@ a {
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  transition: color 300ms ease-in-out;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .main-nav__link:hover, .main-nav__link:focus {
   color: #ff6c00;
+  transform: scale(1.2);
 }
 
 .btn--light {
@@ -560,8 +577,8 @@ a {
 }
 
 .company-socials__link--footer {
-  padding-top: 57px;
-  padding-bottom: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .hero-content {
@@ -765,6 +782,8 @@ a {
   padding: 20px 24px;
   color: #303030;
   background-color: #F7F7F7;
+  transform: translateY(0) scale(1);
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .achievements__item:nth-child(2n-1) {
@@ -776,7 +795,17 @@ a {
 }
 
 .achievements__item:nth-child(2n) {
-  transform: translateY(30px);
+  transform: translateY(30px) scale(1);
+}
+
+.achievements__item:nth-child(2n):hover {
+  transform: translateY(30px) scale(1.2);
+}
+
+.achievements__item:hover {
+  transform: translateY(0) scale(1.2);
+  background-color: rgba(157, 164, 189, 0.4);
+  cursor: auto;
 }
 
 .achievements__wrap {
@@ -899,11 +928,13 @@ a {
   width: 20px;
   height: 20px;
   fill: #303030;
-  transition: fill 300ms ease-in-out;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, fill 300ms ease-in-out;
 }
 
 .masters-socials__link:hover .masters-socials__icon,
 .masters-socials__link:focus .masters-socials__icon {
+  transform: scale(1.2);
   fill: #ff6c00;
 }
 
@@ -1057,12 +1088,27 @@ a {
 .contacts__link {
   display: flex;
   align-items: center;
+  color: #9da4bd;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  transform: scale(1.2);
 }
 
 .contacts__icon {
   width: 24px;
   height: 24px;
   margin-right: 16px;
+  fill: #9da4bd;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  transform: scale(1.2);
 }
 
 .contacts__pre-title {
@@ -1079,8 +1125,8 @@ a {
 }
 
 .footer {
-  padding-top: 57px;
-  padding-bottom: 55px;
+  padding-top: 32px;
+  padding-bottom: 30px;
 }
 
 .footer__container {

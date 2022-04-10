@@ -18,6 +18,9 @@
   color: $primaryTextColor;
   background-color: $secondaryBgdColor;
 
+  transform: translateY(0) scale(1);
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+
   &:nth-child(2n-1) {
     margin-right: 30px;
   }
@@ -27,7 +30,17 @@
   }
 
   &:nth-child(2n) {
-    transform: translateY(30px);
+    transform: translateY(30px) scale(1);
+
+    &:hover {
+      transform: translateY(30px) scale(1.2);
+    }
+  }
+
+  &:hover {
+    transform: translateY(0) scale(1.2);
+    background-color: $transparentTextColorInput;
+    cursor: auto;
   }
 }
 

@@ -28,12 +28,14 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $lightTitleBtnColor;
+    transform: scale(1);
 
-    @include transitioned(color);
+    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 
     &:hover,
     &:focus {
         color: $accentColor;
+        transform: scale(1.2);
     }
 }
 

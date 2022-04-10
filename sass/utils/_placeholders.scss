@@ -38,12 +38,14 @@
     background-color: transparent;
     border-radius: 25px;
     cursor: pointer;
+    transform: scale(1);
 
-    @include transitioned(background-color);
+    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 
     &:hover,
     &:focus {
         background-color: $accentColor;
+        transform: scale(1.2);
     }
 }
 
@@ -118,10 +120,14 @@
 }
 
 %company-socials__link {
-    @include transitioned(color);
+    display: block;
+    transform: scale(1);
+
+    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 
     &:hover,
     &:focus {
         color: $accentColor;
+        transform: scale(1.2);
     }
 }

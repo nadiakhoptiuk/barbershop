@@ -35,12 +35,31 @@
 .contacts__link {
     display: flex;
     align-items: center;
+
+    color: $greyTextColor;
+    transform: scale(1);
+
+    @include transitioned(transform);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
 }
 
 .contacts__icon {
     width: 24px;
     height: 24px;
     margin-right: 16px;
+    fill: $greyTextColor;
+    transform: scale(1);
+
+    @include transitioned(transform);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        transform: scale(1.2);
+    }
 }
 
 

@@ -35,11 +35,13 @@
     width: 20px;
     height: 20px;
     fill: $primaryTextColor;
+    transform: scale(1);
 
-    @include transitioned(fill);
+    transition: transform 300ms ease-in-out, fill 300ms ease-in-out;
     
     .masters-socials__link:hover &,
     .masters-socials__link:focus & {
+        transform: scale(1.2);
         fill: $accentColor;
     }
 }
