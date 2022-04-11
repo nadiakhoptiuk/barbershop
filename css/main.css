@@ -554,7 +554,6 @@ a {
   align-items: flex-end;
   width: 93px;
   height: 680px;
-  padding-left: 26px;
   padding-bottom: 40px;
 }
 
@@ -782,7 +781,7 @@ a {
   padding: 20px 24px;
   color: #303030;
   background-color: #F7F7F7;
-  transform: translateY(0) scale(1);
+  transform: scale(1);
   transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
@@ -790,20 +789,12 @@ a {
   margin-right: 30px;
 }
 
-.achievements__item:nth-child(-n + 2) {
-  margin-bottom: 30px;
-}
-
 .achievements__item:nth-child(2n) {
-  transform: translateY(30px) scale(1);
-}
-
-.achievements__item:nth-child(2n):hover {
-  transform: translateY(30px) scale(1.2);
+  margin-top: 30px;
 }
 
 .achievements__item:hover {
-  transform: translateY(0) scale(1.2);
+  transform: scale(1.2);
   background-color: rgba(157, 164, 189, 0.4);
   cursor: auto;
 }
