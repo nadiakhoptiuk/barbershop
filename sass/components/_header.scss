@@ -1,44 +1,78 @@
 .header {
-    position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media(479px, max-width) {
     width: 100%;
+  }
+  @include media(480px) {
+    width: 480px;
+  }
 }
 
 .header__container {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.nav {
-    @include centeredFlex;
-}
-
-.header__contacts {
-    margin-left: auto;
-    @include centeredFlex;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 }
 
 .header__tel {
-    margin-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  display: block;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
 
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $lightTitleBtnColor;
-    transform: scale(1);
-
-    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
-
-    &:hover,
-    &:focus {
-        color: $accentColor;
-        transform: scale(1.2);
-    }
+  color: $primaryTextColor;
 }
 
 .header__btn {
-    margin-right: 8px;
+  @extend %btn;
+  @include media(767px, max-width) {
+    width: 194px;
+    height: 40px;
+    margin-bottom: 64px;
+    color: $primaryTextColor;
+  }
+  //   margin-right: 8px;
 }
+
+// .nav {
+//     @include centeredFlex;
+// }
+
+// .header__contacts {
+//     margin-left: auto;
+//     @include centeredFlex;
+// }
+
+// .header__tel {
+//     margin-right: 40px;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+
+//     font-size: 12px;
+//     line-height: 1.33;
+//     letter-spacing: 0.1em;
+//     color: $lightTitleBtnColor;
+//     transform: scale(1);
+
+//     transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+
+//     &:hover,
+//     &:focus {
+//         color: $accentColor;
+//         transform: scale(1.2);
+//     }
+// }
+
+// .header__btn {
+//     margin-right: 8px;
+// }

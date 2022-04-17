@@ -1,33 +1,65 @@
 .main-nav {
-    @extend %list;
-
-    display: flex;
-    font-size: 12px;
-    line-height: 1.33;
+  @extend %list;
+  @include media(767px, max-width) {
+    font-size: 18px;
+    line-height: 1.39;
     letter-spacing: 0.1em;
-    color: $lightTitleBtnColor;
+    margin-bottom: 64px;
+
+    color: $primaryTextColor;
+  }
 }
 
 .main-nav__item {
-    display: block;
-
+  @include media(767px, max-width) {
     &:not(:last-child) {
-        margin-right: 40px;
+      margin-bottom: 24px;
     }
+  }
 }
 
 .main-nav__link {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 
-    transform: scale(1);
-
-    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
-
-    &:hover,
-    &:focus {
-        color: $accentColor;
-        transform: scale(1.2);
-    }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transform: scale(1.2);
+  }
+  //     padding-top: 15px;
+  //   padding-bottom: 15px;
+  //   display: block;
 }
+
+// .main-nav {
+
+//     display: flex;
+////   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.1em;
+// }
+
+// .main-nav__item {
+//     display: block;
+
+//     &:not(:last-child) {
+//         margin-right: 40px;
+//     }
+// }
+
+// .main-nav__link {
+//     display: block;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+
+//     transform: scale(1);
+
+//     transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+
+//     &:hover,
+//     &:focus {
+//         color: $accentColor;
+//         transform: scale(1.2);
+//     }
+// }

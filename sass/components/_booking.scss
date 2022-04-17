@@ -1,134 +1,134 @@
 
-.booking__wrap {
-    width: 1280px;
-    margin: 0 auto;
+// .booking__wrap {
+//     width: 1280px;
+//     margin: 0 auto;
 
-    background-color: $bookingSectionBgdColor;
-    background-image: url(../images/Bg.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: calc((100% / 2) - 15px);
-}
+//     background-color: $bookingSectionBgdColor;
+//     background-image: url(../images/Bg.png);
+//     background-position: right;
+//     background-repeat: no-repeat;
+//     background-size: calc((100% / 2) - 15px);
+// }
 
-.booking__container {
-    display: flex;
-}
+// .booking__container {
+//     display: flex;
+// }
 
-.booking {
-    @extend %section;
+// .booking {
+//     @extend %section;
 
-    width: calc((100% / 2) + 15px);
-}
+//     width: calc((100% / 2) + 15px);
+// }
 
-.booking__title {
-    @extend %section-title;
+// .booking__title {
+//     @extend %section-title;
 
-    color: $lightTitleBtnColor;
-    margin-bottom: 35px;
-}
+//     color: $lightTitleBtnColor;
+//     margin-bottom: 35px;
+// }
 
-.booking-form {
-    margin-bottom: 44px;
-}
+// .booking-form {
+//     margin-bottom: 44px;
+// }
 
-.booking-form__wrap {
-    display: flex;
-    margin-bottom: 44px;
-}
+// .booking-form__wrap {
+//     display: flex;
+//     margin-bottom: 44px;
+// }
 
-.booking-form__field {
-    position: relative;
-    color: $transparentTextColorInput;
+// .booking-form__field {
+//     position: relative;
+//     color: $transparentTextColorInput;
 
-    &:hover {
-        color: $lightTitleBtnColor;
-    }
+//     &:hover {
+//         color: $lightTitleBtnColor;
+//     }
 
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-}
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
 
-.booking-form__input {
-    @extend %inputs;
-    height: 31px;
+// .booking-form__input {
+//     @extend %inputs;
+//     height: 31px;
 
-}
+// }
 
-.booking-form__input--name {
-    width: 270px;
+// .booking-form__input--name {
+//     width: 270px;
 
-}
+// }
 
-.booking-form__input--tel {
-    width: 260px;
-}
+// .booking-form__input--tel {
+//     width: 260px;
+// }
 
-.booking-form__label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-
-    font-style: normal;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    @include transitioned(transform);
-
-    .booking-form__input:focus + &,
-    .booking-form__input:not(:placeholder-shown) + & {
-        transform: translateY(-35px);
-        color: $lightTitleBtnColor;
-    }
-}
-
-
-// textarea
-.booking-form__text-field {
-    position: relative;
-    color: $transparentTextColorInput;
-
-    &:hover {
-        color: $lightTitleBtnColor;
-        cursor: pointer;
-    }
-}
-
-.booking-form__textarea {
-    height: 76px;
-    width: 560px;
-    padding: 8px;
-    resize: none;
-    
-    @extend %inputs;
-
-    &::placeholder {
-        font-style: normal;
-        font-size: 11px;
-        line-height: 1.36;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: $transparentTextColorInput;
-    }
-}
-
-// .booking-form__label--textarea {
+// .booking-form__label {
 //     position: absolute;
-//     // top: 50%;
+//     top: 50%;
 //     left: 0;
-//     transform: translateY(50%);
-    
+//     transform: translateY(-50%);
+
 //     font-style: normal;
 //     font-size: 11px;
 //     line-height: 1.36;
 //     letter-spacing: 0.1em;
 //     text-transform: uppercase;
 
-//     .booking-form__textarea:focus + & {
-        
-//         color: transparent;
+//     @include transitioned(transform);
+
+//     .booking-form__input:focus + &,
+//     .booking-form__input:not(:placeholder-shown) + & {
+//         transform: translateY(-35px);
+//         color: $lightTitleBtnColor;
 //     }
 // }
+
+
+// // textarea
+// .booking-form__text-field {
+//     position: relative;
+//     color: $transparentTextColorInput;
+
+//     &:hover {
+//         color: $lightTitleBtnColor;
+//         cursor: pointer;
+//     }
+// }
+
+// .booking-form__textarea {
+//     height: 76px;
+//     width: 560px;
+//     padding: 8px;
+//     resize: none;
+    
+//     @extend %inputs;
+
+//     &::placeholder {
+//         font-style: normal;
+//         font-size: 11px;
+//         line-height: 1.36;
+//         letter-spacing: 0.1em;
+//         text-transform: uppercase;
+//         color: $transparentTextColorInput;
+//     }
+// }
+
+// // .booking-form__label--textarea {
+// //     position: absolute;
+// //     // top: 50%;
+// //     left: 0;
+// //     transform: translateY(50%);
+    
+// //     font-style: normal;
+// //     font-size: 11px;
+// //     line-height: 1.36;
+// //     letter-spacing: 0.1em;
+// //     text-transform: uppercase;
+
+// //     .booking-form__textarea:focus + & {
+        
+// //         color: transparent;
+// //     }
+// // }

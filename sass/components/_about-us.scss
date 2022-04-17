@@ -1,63 +1,68 @@
 .about-us {
-    padding-top: 139px;
-    padding-bottom: 121px;
-    display: flex;
+  @extend %section;
+  // padding-top: 139px;
+  // padding-bottom: 121px;
+  // display: flex;
 }
 
-.about-us__container {
-    display: flex;
+// .about-us__container {
+//     display: flex;
+// }
+
+.about-us__photos {
+  @extend %list;
+  @include media(767px, max-width) {
+    display: none;
+  }
+
+  // display: flex;
+  // margin-right: 64px;
 }
 
-.about-us__photos{
-    @extend %list;
+// .about-us__img {
+//     @extend %img;
+// }
 
-    display: flex;
-    margin-right: 64px;
-}
-
-.about-us__img {
-    @extend %img;
-}
-
-.about-us__item:not(:last-child) {
-    margin-right: 30px;
-}
+// .about-us__item:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .about-us__pre-title--primary {
-    @extend %pre-title;
+  @extend %pre-title;
 
-    color: $primaryTextColor;
-    margin-bottom: 20px;
+  color: $primaryTextColor;
 }
 
-
 .about-us__title--primary {
-    @extend %section-title;
+  @extend %section-title;
 
-    color: $primaryTextColor;
-    margin-bottom: 20px;
-    width: 483px;
+  color: $primaryTextColor;
+  @include media(767px, max-width) {
+    max-width: 330px;
+  }
+
+  // width: 483px;
 }
 
 .about-us__after-title--secondary {
-    @extend %after-title;
-    width: 500px;
+  @extend %after-title;
 
-    color: $secondaryTextColor;
-    margin-bottom: 20px;
+  color: $secondaryTextColor;
+  margin-bottom: 20px;
+  //   width: 500px;
 }
 
 .about-us__unique-text {
-    width: 500px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: $secondaryTextColor;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: inherit;
+  color: $secondaryTextColor;
+  //   width: 500px;
 }
 
-.about-us__btn {
-    @extend %btn;
-    color: $primaryTextColor;
-}
+// .about-us__btn {
+//     @extend %btn;
+//     color: $primaryTextColor;
+// }

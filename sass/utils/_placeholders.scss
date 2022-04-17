@@ -1,133 +1,139 @@
 %list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 %img {
-    display: block;
+  display: block;
 }
 
 %section {
+  @include media(767px, max-width) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+  @include media(768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include media(1200px) {
     padding-top: 130px;
     padding-bottom: 130px;
+  }
 }
 
 %section-title {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+
+  @include media(767px, max-width) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 %btn {
-    min-width: 160px;
-    height: 40px;
+  min-width: 160px;
+  height: 40px;
 
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: inherit;
 
-    border: 1px solid $accentColor;
-    background-color: transparent;
-    border-radius: 25px;
-    cursor: pointer;
-    transform: scale(1);
+  border: 1px solid $accentColor;
+  background-color: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  transform: scale(1);
 
-    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 
-    &:hover,
-    &:focus {
-        background-color: $accentColor;
-        transform: scale(1.2);
-    }
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    transform: scale(1.2);
+  }
 }
 
 %pre-title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
-    &::before {
+  &::before {
     display: inline-block;
     width: 60px;
     height: 1px;
     margin-right: 20px;
-                
-    content: '';
+
+    content: "";
     background-color: currentColor;
-    }
+  }
 }
 
 %after-title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
+  font-weight: 400;
+  @include media(767px, max-width) {
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  //   font-size: 18px;
+  //   line-height: 1.67;
 }
 
 %inputs {
-    padding: 8px;
+  padding: 8px;
 
-    font-style: normal;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
-    color: $lightTitleBtnColor;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid $transparentTextColorInput;
+  color: $lightTitleBtnColor;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $transparentTextColorInput;
 
-    .booking-form__field:hover &,
-    .booking-form__text-field:hover & {
-        color: currentColor;
-        border-color: currentColor;
-    }
+  .booking-form__field:hover &,
+  .booking-form__text-field:hover & {
+    color: currentColor;
+    border-color: currentColor;
+  }
 }
-
 
 // socials
 %company-socials {
-    @extend %list;
-
-    @include centeredFlex;
-
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: $primaryTextColor;
-
-    &::before {
-        content: '';
-        width: 60px;
-        height: 1px;
-        margin-right: 40px;
-        background-color: $primaryTextColor;
-    }
+  @include centeredFlex;
 }
 
 %company-socials__link {
-    display: block;
-    transform: scale(1);
+  display: block;
+  transform: scale(1);
 
-    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 
-    &:hover,
-    &:focus {
-        color: $accentColor;
-        transform: scale(1.2);
-    }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transform: scale(1.2);
+  }
 }

@@ -5,42 +5,42 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .page {
-    margin: 0;
-    color: $primaryTextColor;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+  position: relative;
+  margin: 0;
 
-    background-color: $primaryBgdColor;
-    color: $primaryTextColor;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  background-color: $primaryBgdColor;
+  color: $primaryTextColor;
+
+  @include transitioned(background-color);
+  &.menu-open {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
-.container {
-    margin: 0 auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+// .top-title {
+//     font-size: 11px;
+//     line-height: 1.36;
 
-.top-title {
-    font-size: 11px;
-    line-height: 1.36;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
 
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    
-}
+// }
 
-.visually-hidden {
-    position: fixed;
-    transform: scale(0);
-}
+// .visually-hidden {
+//     position: fixed;
+//     transform: scale(0);
+// }

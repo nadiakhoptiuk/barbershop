@@ -1,48 +1,55 @@
 .logo {
-    width: 66px;
-    height: 55px;
-    margin-right: 67px;
-    transform: scale(1);
+  width: 66px;
+  height: 55px;
+  flex-grow: 1;
 
-    @include transitioned(transform);
+  transform: scale(1);
 
-    &:hover,
-    &:focus {
-        transform: scale(1.2);
-    }
+  @include transitioned(transform);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+  @include media(767px, max-width) {
+    fill: $lightTitleBtnColor;
+  }
+
+  // margin-right: 67px;
 }
 
-.logo--anchor {
-    position: fixed;
-    bottom: 130px;
-    right: 40px;
-    z-index: 100;
+// ---------- button-anchor ----------
+// .logo--anchor {
+//     position: fixed;
+//     bottom: 130px;
+//     right: 40px;
+//     z-index: 100;
 
-    width: 8vw;
-    height: 15vh;
-    background-color: $transparentTextColorInput;
-    opacity: 0.5;
-    border-radius: 50%;
+//     width: 8vw;
+//     height: 15vh;
+//     background-color: $transparentTextColorInput;
+//     opacity: 0.5;
+//     border-radius: 50%;
 
-    transform: scale(1);
+//     transform: scale(1);
 
-    @include centeredFlex;
+//     @include centeredFlex;
 
-    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+//     transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 
-    &:hover {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-}
+//     &:hover {
+//         opacity: 1;
+//         transform: scale(1.2);
+//     }
+// }
 
-.logo__icon--anchor {
-    opacity: 0.5;
+// .logo__icon--anchor {
+//     opacity: 0.5;
 
-    transition: opacity 300ms ease-in-out, fill 300ms ease-in-out;
+//     transition: opacity 300ms ease-in-out, fill 300ms ease-in-out;
 
-    .logo--anchor:hover & {
-        opacity: 1;
-        fill: $accentColor;
-    }
-}
+//     .logo--anchor:hover & {
+//         opacity: 1;
+//         fill: $accentColor;
+//     }
+// }

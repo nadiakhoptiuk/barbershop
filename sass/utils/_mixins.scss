@@ -1,10 +1,31 @@
 @mixin centeredFlex($type: flex) {
-    display: $type;
-    justify-content: center;
-    align-items: center;
+  display: $type;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin transitioned($property) {
-    transition: $property 300ms ease-in-out;
+  transition: $property 300ms ease-in-out;
 }
 
+@mixin media($width, $var: min-width) {
+  @media screen and ($var: $width) {
+    @content;
+  }
+}
+
+@mixin ratio2 {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 2dppx),
+    screen and (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin ratio3 {
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 3dppx),
+    screen and (min-resolution: 288dpi) {
+    @content;
+  }
+}

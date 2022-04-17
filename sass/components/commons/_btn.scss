@@ -1,10 +1,9 @@
-
 .btn--light {
-    @extend %btn;
-    color: $lightTitleBtnColor;
+  @extend %btn;
+  color: $lightTitleBtnColor;
 }
 
 .btn--dark {
-    @extend %btn;
-    color: $primaryTextColor;
+  @extend %btn;
+  color: $primaryTextColor;
 }

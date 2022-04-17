@@ -1,73 +1,73 @@
-.contacts {
-    @extend %section;
+// .contacts {
+//     @extend %section;
 
-    width: calc((100% / 2) - 15px);
-    padding-left: 100px;
-}
+//     width: calc((100% / 2) - 15px);
+//     padding-left: 100px;
+// }
 
-.contacts__title {
-    @extend %section-title;
+// .contacts__title {
+//     @extend %section-title;
 
-    color: $lightTitleBtnColor;
-    margin-bottom: 40px;
-}
+//     color: $lightTitleBtnColor;
+//     margin-bottom: 40px;
+// }
 
-.address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: $greyTextColor;
-}
+// .address {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.67;
+//     letter-spacing: 0.02em;
+//     color: $greyTextColor;
+// }
 
-.contacts__list {
-    @extend %list;
+// .contacts__list {
+//     @extend %list;
 
-    width: 270px;
-    margin-bottom: 70px;
-}
+//     width: 270px;
+//     margin-bottom: 70px;
+// }
 
-.contacts__item:not(:last-child) {
-    margin-bottom: 20px;
-}
+// .contacts__item:not(:last-child) {
+//     margin-bottom: 20px;
+// }
 
-.contacts__link {
-    display: flex;
-    align-items: center;
+// .contacts__link {
+//     display: flex;
+//     align-items: center;
 
-    color: $greyTextColor;
-    transform: scale(1);
+//     color: $greyTextColor;
+//     transform: scale(1);
 
-    @include transitioned(transform);
+//     @include transitioned(transform);
 
-    &:hover,
-    &:focus {
-        transform: scale(1.2);
-    }
-}
+//     &:hover,
+//     &:focus {
+//         transform: scale(1.2);
+//     }
+// }
 
-.contacts__icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
-    fill: $greyTextColor;
-    transform: scale(1);
-}
+// .contacts__icon {
+//     width: 24px;
+//     height: 24px;
+//     margin-right: 16px;
+//     fill: $greyTextColor;
+//     transform: scale(1);
+// }
 
 
-.contacts__pre-title {
-    @extend %pre-title;
-    color: $lightTitleBtnColor;
+// .contacts__pre-title {
+//     @extend %pre-title;
+//     color: $lightTitleBtnColor;
 
-    margin-bottom: 20px;
+//     margin-bottom: 20px;
 
-    &::before {
-        background-color: $transparentTextColorInput;
-    }
-}
+//     &::before {
+//         background-color: $transparentTextColorInput;
+//     }
+// }
 
-.contacts__after-title {
-    @extend %after-title;
-    color: $greyTextColor;
-}
+// .contacts__after-title {
+//     @extend %after-title;
+//     color: $greyTextColor;
+// }
