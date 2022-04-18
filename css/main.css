@@ -30,33 +30,33 @@
   }
 }
 
-.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials {
+.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
-.masters__photo {
+.masters__photo, .gallery__img {
   display: block;
 }
 
 @media screen and (max-width: 767px) {
-  .about-us, .prices, .benefits, .masters {
+  .about-us, .prices, .benefits, .masters, .gallery {
     padding-top: 84px;
     padding-bottom: 84px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-us, .prices, .benefits, .masters {
+  .about-us, .prices, .benefits, .masters, .gallery {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-us, .prices, .benefits, .masters {
+  .about-us, .prices, .benefits, .masters, .gallery {
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -94,7 +94,7 @@
   transform: scale(1.2);
 }
 
-.hero-container__pre-title, .about-us__pre-title--primary, .prices__pre-title, .benefits__pre-title--primary, .masters__pre-title--primary {
+.hero-container__pre-title, .about-us__pre-title--primary, .prices__pre-title, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -106,7 +106,7 @@
   text-transform: uppercase;
 }
 
-.hero-container__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before {
+.hero-container__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before, .gallery__pre-title--primary::before {
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -409,6 +409,11 @@ a {
 .page.menu-open {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 .header {
@@ -1060,16 +1065,10 @@ a {
 .masters-socials__link {
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 300ms ease-in-out;
-}
-
-.masters-socials__link:hover, .masters-socials__link:focus {
-  background-color: rgba(157, 164, 189, 0.4);
 }
 
 .masters-socials__icon {
@@ -1084,5 +1083,27 @@ a {
 .masters-socials__link:focus .masters-socials__icon {
   transform: scale(1.2);
   fill: #ff6c00;
+}
+
+.gallery__pre-title--primary {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery__list {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item {
+    width: 100%;
+    margin: 15px;
+  }
+}
+
+.gallery__img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

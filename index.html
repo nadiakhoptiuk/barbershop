@@ -275,14 +275,21 @@
 
           <ul class="masters__list">
             <li class="masters__item">
-              <img
-                class="masters__photo"
-                src="./images/about-masters-img-1.jpg"
-                alt="John Smith фото"
-                lang="en"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/smith-mobile.jpg    1x,
+                    ./images/smith-mobile@2x.jpg 2x,
+                    ./images/smith-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="masters__photo"
+                  src="./images/smith-mobile.jpg"
+                  alt="John Smith фото"
+                />
+              </picture>
               <div class="masters__info">
                 <h3 class="masters__name" lang="en">John Smith</h3>
                 <p class="masters__experience" lang="en">Extreme Barber</p>
@@ -321,14 +328,21 @@
             </li>
 
             <li class="masters__item">
-              <img
-                class="masters__photo"
-                src="./images/about-masters-img-2.jpg"
-                alt="Michele Doe фото"
-                lang="en"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doe-mobile.jpg    1x,
+                    ./images/doe-mobile@2x.jpg 2x,
+                    ./images/doe-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="masters__photo"
+                  src="./images/doe-mobile.jpg"
+                  alt="Michele Doe фото"
+                />
+              </picture>
               <div class="masters__info">
                 <h3 class="masters__name" lang="en">Michele Doe</h3>
                 <p class="masters__experience" lang="en">Extreme Barber</p>
@@ -367,14 +381,21 @@
             </li>
 
             <li class="masters__item">
-              <img
-                class="masters__photo"
-                src="./images/about-masters-img-3.jpg"
-                alt="Alan Black фото"
-                lang="en"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/black-mobile.jpg    1x,
+                    ./images/black-mobile@2x.jpg 2x,
+                    ./images/black-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="masters__photo"
+                  src="./images/black-mobile.jpg"
+                  alt="Alan Black фото"
+                />
+              </picture>
               <div class="masters__info">
                 <h3 class="masters__name" lang="en">Alan Black</h3>
                 <p class="masters__experience" lang="en">Extreme Barber</p>
@@ -416,7 +437,7 @@
       </section>
 
       <!-- Gallery section -->
-      <!-- <section class="gallery">
+      <section class="gallery">
         <div class="container">
           <h2 class="visually-hidden">Галерея</h2>
           <p class="gallery__pre-title gallery__pre-title--primary">
@@ -425,86 +446,116 @@
 
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img
-                class="gallery__img"
-                src="./images/galery-1.jpg"
-                alt="барбер в работе"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-1-mobile.jpg    1x,
+                    ./images/gallery-1-mobile@2x.jpg 2x,
+                    ./images/gallery-1-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="gallery__img"
+                  src="./images/galery-1-mobile.jpg"
+                  alt="барбер в работе"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__img"
-                src="./images/galery-2.jpg"
-                alt="барбер в работе"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-2-mobile.jpg    1x,
+                    ./images/gallery-2-mobile@2x.jpg 2x,
+                    ./images/gallery-2-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="gallery__img"
+                  src="./images/galery-2-mobile.jpg"
+                  alt="барбер в работе"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__img"
-                src="./images/galery-3.jpg"
-                alt="барбер в работе"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-3-mobile.jpg    1x,
+                    ./images/gallery-3-mobile@2x.jpg 2x,
+                    ./images/gallery-3-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="gallery__img"
+                  src="./images/galery-3-mobile.jpg"
+                  alt="барбер в работе"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                class="gallery__img"
-                src="./images/galery-4.jpg"
-                alt="барбер в работе"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-4-mobile.jpg    1x,
+                    ./images/gallery-4-mobile@2x.jpg 2x,
+                    ./images/gallery-4-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="gallery__img"
+                  src="./images/galery-4-mobile.jpg"
+                  alt="барбер в работе"
+                />
+              </picture>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- <div class="booking__wrap">
         <div class="container booking__container" id="contacts">
           <!-- Booking section -->
       <!-- <section class="booking">
-            <h2 class="booking__title">Онлайн-запись</h2>
-            <form class="booking-form">
-              <div class="booking-form__wrap">
-                <label class="booking-form__field">
-                  <input
-                    class="booking-form__input booking-form__input--name"
-                    name="name"
-                    type="text"
-                    placeholder=" "
-                  />
-                  <span class="booking-form__label">имя*</span>
-                </label>
+        <h2 class="booking__title">Онлайн-запись</h2>
+        <form class="booking-form">
+          <div class="booking-form__wrap">
+            <label class="booking-form__field">
+              <input
+                class="booking-form__input booking-form__input--name"
+                name="name"
+                type="text"
+                placeholder=" "
+              />
+              <span class="booking-form__label">имя*</span>
+            </label>
 
-                <label class="booking-form__field">
-                  <input
-                    class="booking-form__input booking-form__input--tel"
-                    type="tel"
-                    name="tel"
-                    placeholder=" "
-                  />
-                  <span class="booking-form__label">телефон*</span>
-                </label>
-              </div>
+            <label class="booking-form__field">
+              <input
+                class="booking-form__input booking-form__input--tel"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
+              <span class="booking-form__label">телефон*</span>
+            </label>
+          </div>
 
-              <label class="booking-form__text-field">
-                <textarea
-                  class="booking-form__textarea"
-                  name="message"
-                  placeholder="сообщение"
-                ></textarea>
-              </label>
-            </form>
+          <label class="booking-form__text-field">
+            <textarea
+              class="booking-form__textarea"
+              name="message"
+              placeholder="сообщение"
+            ></textarea>
+          </label>
+        </form>
 
-            <button class="booking__btn btn--light" type="submit">
-              отправить
-            </button>
-          </section> -->
+        <button class="booking__btn btn--light" type="submit">отправить</button>
+      </section> -->
 
       <!-- Contacts section -->
       <!-- <section class="contacts">

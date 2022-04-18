@@ -19,16 +19,9 @@
   width: 100%;
   height: 100%;
 
-  background-color: $secondaryBgdColor;
   border-radius: 50%;
 
   @include centeredFlex;
-  @include transitioned(background-color);
-
-  &:hover,
-  &:focus {
-    background-color: $transparentTextColorInput;
-  }
 }
 
 .masters-socials__icon {
