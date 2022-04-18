@@ -30,7 +30,7 @@
   }
 }
 
-.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list {
+.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list, .contacts__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -42,27 +42,27 @@
 }
 
 @media screen and (max-width: 767px) {
-  .about-us, .prices, .benefits, .masters, .gallery, .booking {
+  .about-us, .prices, .benefits, .masters, .gallery, .booking, .contacts {
     padding-top: 84px;
     padding-bottom: 84px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-us, .prices, .benefits, .masters, .gallery, .booking {
+  .about-us, .prices, .benefits, .masters, .gallery, .booking, .contacts {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-us, .prices, .benefits, .masters, .gallery, .booking {
+  .about-us, .prices, .benefits, .masters, .gallery, .booking, .contacts {
     padding-top: 130px;
     padding-bottom: 130px;
   }
 }
 
-.hero-container__title, .about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary, .booking__title {
+.hero-container__title, .about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary, .booking__title, .contacts__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -94,7 +94,7 @@
   transform: scale(1.2);
 }
 
-.hero-container__pre-title, .about-us__pre-title--primary, .prices__pre-title, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary {
+.hero-container__pre-title, .about-us__pre-title--primary, .prices__pre-title, .benefits__pre-title--primary, .masters__pre-title--primary, .gallery__pre-title--primary, .contacts__pre-title {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -106,7 +106,7 @@
   text-transform: uppercase;
 }
 
-.hero-container__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before, .gallery__pre-title--primary::before {
+.hero-container__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title::before, .benefits__pre-title--primary::before, .masters__pre-title--primary::before, .gallery__pre-title--primary::before, .contacts__pre-title::before {
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -115,12 +115,12 @@
   background-color: currentColor;
 }
 
-.hero-container__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary {
+.hero-container__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary, .contacts__after-title {
   font-weight: 400;
 }
 
 @media screen and (max-width: 767px) {
-  .hero-container__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary {
+  .hero-container__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary, .contacts__after-title {
     font-size: 16px;
     line-height: 1.62;
   }
@@ -1136,6 +1136,7 @@ a {
 
 .booking__wrap {
   background-color: #191c26;
+  padding: 0;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1146,8 +1147,31 @@ a {
 }
 
 @media screen and (max-width: 1199px) {
-  .booking {
+  .booking__container {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .booking {
+    width: 448px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .booking {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1249,5 +1273,104 @@ a {
 .booking__btn {
   display: block;
   margin: 0 auto;
+}
+
+.contacts {
+  background-image: url("../images/contacts-bg-mobile.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) {
+  .contacts {
+    background-image: url("../images/contacts-bg-mobile@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 3dppx), screen and (min-resolution: 288dpi) {
+  .contacts {
+    background-image: url("../images/contacts-bg-mobile@3x.png");
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contacts__title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__title {
+    text-align: center;
+  }
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: inherit;
+  color: #9da4bd;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__list {
+    margin-bottom: 44px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: #9da4bd;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  transform: scale(1.2);
+}
+
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  fill: #9da4bd;
+  transform: scale(1);
+}
+
+.contacts__pre-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts__pre-title::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
+.contacts__after-title {
+  color: #9da4bd;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__after-title {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 /*# sourceMappingURL=main.css.map */

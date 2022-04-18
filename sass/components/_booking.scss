@@ -1,5 +1,6 @@
 .booking__wrap {
   background-color: $bookingSectionBgdColor;
+  padding: 0;
 
   @include media(1199px, max-width) {
     display: flex;
@@ -15,16 +16,30 @@
   //   background-size: calc((100% / 2) - 15px);
 }
 
-// .booking__container {
-//     display: flex;
-// }
+.booking__container {
+  @include media(1199px, max-width) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  // display: flex;
+}
 
 .booking {
   @extend %section;
-  @include media(1199px, max-width) {
-    width: 100%;
-  }
 
+  @include media(480px) {
+    width: 448px;
+    margin: 0 auto;
+  }
+  @include media(768px) {
+    width: 720px;
+    margin: 0 auto;
+  }
+  @include media(1199px, max-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   // width: calc((100% / 2) + 15px);
 }
 
