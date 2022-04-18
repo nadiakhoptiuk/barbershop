@@ -23,7 +23,7 @@
   }
 }
 
-.main-nav, .company-socials, .about-us__photos, .prices__list {
+.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -31,27 +31,27 @@
 }
 
 @media screen and (max-width: 767px) {
-  .about-us, .prices {
+  .about-us, .prices, .benefits {
     padding-top: 84px;
     padding-bottom: 84px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-us, .prices {
+  .about-us, .prices, .benefits {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-us, .prices {
+  .about-us, .prices, .benefits {
     padding-top: 130px;
     padding-bottom: 130px;
   }
 }
 
-.hero-container__title, .about-us__title--primary, .prices__title {
+.hero-container__title, .about-us__title--primary, .prices__title, .benefits__title--primary {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -83,7 +83,7 @@
   transform: scale(1.2);
 }
 
-.hero-container__pre-title, .about-us__pre-title--primary, .prices__pre-title {
+.hero-container__pre-title, .about-us__pre-title--primary, .prices__pre-title, .benefits__pre-title--primary {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -95,7 +95,7 @@
   text-transform: uppercase;
 }
 
-.hero-container__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title::before {
+.hero-container__pre-title::before, .about-us__pre-title--primary::before, .prices__pre-title::before, .benefits__pre-title--primary::before {
   display: inline-block;
   width: 60px;
   height: 1px;
@@ -104,12 +104,12 @@
   background-color: currentColor;
 }
 
-.hero-container__after-title, .about-us__after-title--secondary {
+.hero-container__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary {
   font-weight: 400;
 }
 
 @media screen and (max-width: 767px) {
-  .hero-container__after-title, .about-us__after-title--secondary {
+  .hero-container__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary {
     font-size: 16px;
     line-height: 1.62;
   }
@@ -853,5 +853,99 @@ a {
 .prices__btn {
   display: block;
   margin: 0 auto;
+}
+
+.benefits__container {
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits__container {
+    flex-direction: column-reverse;
+  }
+}
+
+.benefits__pre-title--primary {
+  color: #303030;
+}
+
+.benefits__title--primary {
+  color: #303030;
+}
+
+.benefits__after-title--secondary {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #555555;
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achievements__item {
+  color: #303030;
+  background-color: #f7f7f7;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .achievements__item {
+    padding: 20px 35px;
+    width: calc((100% - 30px) / 2);
+    height: 133px;
+  }
+}
+
+.achievements__item:nth-child(2n-1) {
+  margin-right: 30px;
+}
+
+.achievements__item:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.achievements__item:hover {
+  transform: scale(1.2);
+  background-color: rgba(157, 164, 189, 0.4);
+  cursor: auto;
+}
+
+.achievements__wrap {
+  width: 122px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.achievements__count {
+  display: flex;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.achievements__count::after {
+  content: "+";
+  color: #ff6c00;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-left: 2px;
+  align-self: start;
+}
+
+.achievements__desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }
 /*# sourceMappingURL=main.css.map */

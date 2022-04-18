@@ -1,31 +1,35 @@
-// .benefits {
-//     padding-top: 114px;
-//     padding-bottom: 130px;
-// }
+.benefits {
+  @extend %section;
+  // padding-top: 114px;
+  // padding-bottom: 130px;
+}
 
-// .benefits__container {
-//     display: flex;
-// }
+.benefits__container {
+  display: flex;
+  @include media(1199px, max-width) {
+    flex-direction: column-reverse;
+  }
+}
 
-// .benefits__pre-title--primary {
-//     @extend %pre-title;
+.benefits__pre-title--primary {
+  @extend %pre-title;
+  color: $primaryTextColor;
+}
 
-//     color: $primaryTextColor;
-//     margin-bottom: 20px;
-// }
+.benefits__title--primary {
+  @extend %section-title;
 
-// .benefits__title--primary {
-//     @extend %section-title;
+  color: $primaryTextColor;
 
-//     color: $primaryTextColor;
-//     margin-bottom: 20px;
-//     width: 483px;
-// }
+  //   width: 483px;
+}
 
-// .benefits__after-title--secondary {
-//     @extend %after-title;
-//     width: 500px;
+.benefits__after-title--secondary {
+  @extend %after-title;
+  margin-bottom: 44px;
 
-//     color: $secondaryTextColor;
-//     margin-bottom: 20px;
-// }
+  font-size: 18px;
+  line-height: 30px;
+  color: $secondaryTextColor;
+  // width: 500px;
+}
