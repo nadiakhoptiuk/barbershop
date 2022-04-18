@@ -30,7 +30,7 @@
   }
 }
 
-.main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list, .contacts__list {
+.company-socials--footer, .main-nav, .company-socials, .about-us__photos, .prices__list, .achievements, .masters__list, .masters-socials, .gallery__list, .contacts__list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -144,6 +144,23 @@
 .booking-form__text-field:hover .booking-form__textarea {
   color: currentColor;
   border-color: currentColor;
+}
+
+.company-socials--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-socials__link--footer {
+  display: block;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.company-socials__link--footer:hover, .company-socials__link--footer:focus {
+  color: #ff6c00;
+  transform: scale(1.2);
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -708,16 +725,16 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .company-socials__item:not(:last-child) {
+  .company-socials__item--menu:not(:last-child) {
     margin-bottom: 24px;
   }
 }
 
-.company-socials__item:first-child {
+.company-socials__item--menu:first-child {
   position: relative;
 }
 
-.company-socials__item:first-child::before {
+.company-socials__item--menu:first-child::before {
   position: absolute;
   right: calc(100% + 40px);
   top: 50%;
@@ -726,6 +743,41 @@ a {
   width: 60px;
   height: 1px;
   background-color: currentColor;
+}
+
+.company-socials--footer {
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.company-socials__item--footer {
+  display: flex;
+  align-items: center;
+}
+
+.company-socials__item--footer:not(:last-child) {
+  margin-right: 40px;
+}
+
+.company-socials__item--footer:first-child {
+  position: relative;
+}
+
+.company-socials__item--footer:first-child::before {
+  position: absolute;
+  right: calc(100% + 40px);
+  top: 50%;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.company-socials__link--footer {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }
 
 @media screen and (max-width: 767px) {
@@ -1372,5 +1424,32 @@ a {
     font-size: 18px;
     line-height: 1.67;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.footer-copyright {
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
 }
 /*# sourceMappingURL=main.css.map */
