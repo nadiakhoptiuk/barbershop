@@ -1,25 +1,30 @@
-// .prices {
-//     @extend %section;
-//     margin: 0 auto;
+.prices {
+  width: 100%;
+  @extend %section;
+  background-color: $pricesBgdColor;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-//     background-image: url('../images/bg-price.png');
-//     background-color: $pricesBgdColor;
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     max-width: 1280px;
-// }
+  @include media(767px, max-width) {
+    background-image: url("../images/prices-bg-mobile.png");
+  }
+  @include ratio2 {
+    background-image: url("../images/prices-bg-mobile@2x.png");
+  }
+  @include ratio3 {
+    background-image: url("../images/prices-bg-mobile@3x.png");
+  }
+}
 
-// .prices__pre-title--secondary {
-//     @extend %pre-title;
+.prices__pre-title {
+  @extend %pre-title;
+  color: $preTitleColorDark;
+}
 
-//     color: $preTitleColorHero;
-//     margin-bottom: 20px;
-// }
-
-// .prices__title {
-//     @extend %section-title;
-
-//     color: $lightTitleBtnColor;
-//     margin-bottom: 44px;
-// }
+.prices__title {
+  // for all devices
+  margin-bottom: 44px;
+  @extend %section-title;
+  color: $lightTitleBtnColor;
+}

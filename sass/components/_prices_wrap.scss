@@ -1,38 +1,3 @@
-.prices {
-  @extend %section;
-  background-color: $pricesBgdColor;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  @include media(479px, max-width) {
-    width: 100%;
-  }
-  @include media(480px) {
-    width: 480px;
-  }
-  @include media(767px, max-width) {
-    background-image: url("../images/prices-bg-mobile.png");
-  }
-  @include ratio2 {
-    background-image: url("../images/prices-bg-mobile@2x.png");
-  }
-  @include ratio3 {
-    background-image: url("../images/prices-bg-mobile@3x.png");
-  }
-}
-
-.prices__pre-title {
-  @extend %pre-title;
-  color: $preTitleColorDark;
-}
-
-.prices__title {
-  // for all devices
-  margin-bottom: 44px;
-  @extend %section-title;
-  color: $lightTitleBtnColor;
-}
-
 .prices__wrap {
   // for all
   margin-bottom: 50px;

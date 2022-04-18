@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  @include media(479px, max-width) {
+    width: 100%;
+    max-width: 448px;
+  }
   @include media(480px) {
     width: 448px;
   }

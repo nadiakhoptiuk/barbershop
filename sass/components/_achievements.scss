@@ -10,13 +10,17 @@
 // }
 
 .achievements__item {
+  @include centeredFlex;
   color: $primaryTextColor;
   background-color: $secondaryBgdColor;
   // width: 170px;
   transform: scale(1);
   transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
-
-  @include media(767px, max-width) {
+  @include media(479px, max-width) {
+    width: calc((100% - 30px) / 2);
+    height: 133px;
+  }
+  @include media(480px) {
     padding: 20px 35px;
     width: calc((100% - 30px) / 2);
     height: 133px;
@@ -38,7 +42,14 @@
 }
 
 .achievements__wrap {
-  width: 122px;
+  @include media(479px, max-width) {
+    width: 100%;
+    max-width: 122px;
+  }
+  @include media(480px) {
+    width: 122px;
+  }
+
   height: auto;
 
   @include centeredFlex;

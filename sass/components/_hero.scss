@@ -1,17 +1,20 @@
 .hero {
-  padding-top: 208px;
-  padding-bottom: 183px;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @include media(479px, max-width) {
     width: 100%;
+    padding-top: 208px;
+    padding-bottom: 183px;
   }
   @include media(480px) {
     width: 480px;
+    padding-top: 208px;
+    padding-bottom: 183px;
   }
   @include media(767px, max-width) {
+    padding-top: 208px;
+    padding-bottom: 183px;
     background-image: linear-gradient(
         to right,
         $heroGradientColor,

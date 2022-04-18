@@ -1,47 +1,47 @@
-// .masters-socials {
-//     @extend %list;
+.masters-socials {
+  @extend %list;
 
-//     @include centeredFlex;
-// }
+  @include centeredFlex;
+}
 
-// .masters-socials__item {
-//     width: 50px;
-//     height: 50px;
+.masters-socials__item {
+  width: 50px;
+  height: 50px;
 
-//     border-color: $primaryBgdColor;
+  border-color: $primaryBgdColor;
 
-//     &:not(:last-child) {
-//         margin-right: 4px;
-//     }
-// }
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
 
-// .masters-socials__link {
-//     width: 100%;
-//     height: 100%;
+.masters-socials__link {
+  width: 100%;
+  height: 100%;
 
-//     background-color: $secondaryBgdColor;
-//     border-radius: 50%;
+  background-color: $secondaryBgdColor;
+  border-radius: 50%;
 
-//     @include centeredFlex;
-//     @include transitioned(background-color);
+  @include centeredFlex;
+  @include transitioned(background-color);
 
-//     &:hover,
-//     &:focus {
-//         background-color: $transparentTextColorInput;
-//     }
-// }
+  &:hover,
+  &:focus {
+    background-color: $transparentTextColorInput;
+  }
+}
 
-// .masters-socials__icon {
-//     width: 20px;
-//     height: 20px;
-//     fill: $primaryTextColor;
-//     transform: scale(1);
+.masters-socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: $primaryTextColor;
+  transform: scale(1);
 
-//     transition: transform 300ms ease-in-out, fill 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, fill 300ms ease-in-out;
 
-//     .masters-socials__link:hover &,
-//     .masters-socials__link:focus & {
-//         transform: scale(1.2);
-//         fill: $accentColor;
-//     }
-// }
+  .masters-socials__link:hover &,
+  .masters-socials__link:focus & {
+    transform: scale(1.2);
+    fill: $accentColor;
+  }
+}

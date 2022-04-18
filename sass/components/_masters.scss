@@ -1,63 +1,73 @@
-// .masters {
-//     @extend %section;
+.masters {
+  @extend %section;
 
-//     background-color: $secondaryBgdColor;
-// }
+  background-color: $secondaryBgdColor;
+}
 
-// .masters__pre-title--primary {
-//     @extend %pre-title;
+.masters__pre-title--primary {
+  @extend %pre-title;
 
-//     color: $primaryTextColor;
-//     margin-bottom: 20px;
-// }
+  color: $primaryTextColor;
+  margin-bottom: 20px;
+}
 
-// .masters__title--primary {
-//     @extend %section-title;
+.masters__title--primary {
+  @extend %section-title;
 
-//     color: $primaryTextColor;
-//     margin-bottom: 44px;
-// }
+  color: $primaryTextColor;
+  margin-bottom: 44px;
+}
 
-// .masters__list {
-//     @extend %list;
+.masters__list {
+  @extend %list;
 
-//     display: flex;
-// }
+  display: flex;
+  @include media(767px, max-width) {
+    flex-wrap: wrap;
+  }
+}
 
-// .masters__item {
-//     width: calc((100% - 30px * 2) / 3);
+.masters__item {
+  width: 100%;
 
-//     &:not(:last-child) {
-//     margin-right: 30px;
-//     }
-// }
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  @include media(1200px) {
+    width: calc((100% - 30px * 2) / 3);
 
-// .masters__photo {
-//     @extend %img;
-// }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
 
-// .masters__wrap {
-//     padding: 30px 82px 0 82px;
-// }
+.masters__photo {
+  @extend %img;
+  max-width: 100%;
+  height: auto;
+}
 
-// .masters__name {
-//     margin-bottom: 8px;
+.masters__info {
+  padding-top: 30px;
+  text-align: center;
+}
 
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 1.39;
-//     text-align: center;
-//     letter-spacing: 0.02em;
-//     color: $primaryTextColor;
-// }
+.masters__name {
+  // for all
+  margin-bottom: 8px;
 
-// .masters__experience {
-//     margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  color: $primaryTextColor;
+}
 
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.02em;
-//     color: $accentColor;
-// }
+.masters__experience {
+  // for all
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  color: $accentColor;
+}
