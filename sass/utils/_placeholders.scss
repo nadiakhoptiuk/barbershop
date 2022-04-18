@@ -31,11 +31,6 @@
   line-height: 1.17;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
-
-  @include media(767px, max-width) {
-    font-size: 28px;
-    line-height: 1.18;
-  }
 }
 
 %btn {

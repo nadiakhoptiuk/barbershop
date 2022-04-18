@@ -27,13 +27,13 @@
       ),
       url("../images/hero-bg-mobile@2x.jpg");
   }
-  @include ratio2 {
+  @include ratio3 {
     background-image: linear-gradient(
         to right,
         $heroGradientColor,
         $heroGradientColor
       ),
-      url("../images/hero-bg-mobile@2x.jpg");
+      url("../images/hero-bg-mobile@3x.jpg");
   }
 
   // tablet
@@ -68,7 +68,7 @@
 .hero-container__pre-title {
   @extend %pre-title;
   margin-bottom: 20px;
-  color: $preTitleColorHero;
+  color: $preTitleColorDark;
 }
 
 .hero-container__title {
