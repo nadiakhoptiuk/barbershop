@@ -5,27 +5,16 @@
 
 .company-socials {
   @extend %list;
-  position: relative;
+  margin-left: 100px;
 
   letter-spacing: 0.2em;
   color: $primaryTextColor;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 1px;
-    background-color: $primaryTextColor;
-  }
   @include media(767px, max-width) {
     font-size: 14px;
     line-height: 1.36;
-
-    &::before {
-      margin-right: 40px;
-    }
   }
-  // display: flex;
+
   // align-items: flex-end;
   // width: 93px;
   // height: 680px;
@@ -52,6 +41,22 @@
     margin-bottom: 24px;
   }
   // margin-right: 40px;
+}
+
+.company-socials__item:first-child {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    right: calc(100% + 40px);
+    top: 50%;
+
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
 }
 
 // .company-socials__link--hero {

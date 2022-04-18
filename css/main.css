@@ -42,27 +42,27 @@
 }
 
 @media screen and (max-width: 767px) {
-  .about-us, .prices, .benefits, .masters, .gallery {
+  .about-us, .prices, .benefits, .masters, .gallery, .booking {
     padding-top: 84px;
     padding-bottom: 84px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-us, .prices, .benefits, .masters, .gallery {
+  .about-us, .prices, .benefits, .masters, .gallery, .booking {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-us, .prices, .benefits, .masters, .gallery {
+  .about-us, .prices, .benefits, .masters, .gallery, .booking {
     padding-top: 130px;
     padding-bottom: 130px;
   }
 }
 
-.hero-container__title, .about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary {
+.hero-container__title, .about-us__title--primary, .prices__title, .benefits__title--primary, .masters__title--primary, .booking__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
@@ -71,7 +71,7 @@
   margin-bottom: 20px;
 }
 
-.header__btn, .btn--light, .btn--dark, .prices__btn {
+.header__btn, .btn--light, .btn--dark, .prices__btn, .booking__btn {
   min-width: 160px;
   height: 40px;
   font-family: inherit;
@@ -89,7 +89,7 @@
   transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
-.header__btn:hover, .btn--light:hover, .btn--dark:hover, .prices__btn:hover, .header__btn:focus, .btn--light:focus, .btn--dark:focus, .prices__btn:focus {
+.header__btn:hover, .btn--light:hover, .btn--dark:hover, .prices__btn:hover, .booking__btn:hover, .header__btn:focus, .btn--light:focus, .btn--dark:focus, .prices__btn:focus, .booking__btn:focus {
   background-color: #ff6c00;
   transform: scale(1.2);
 }
@@ -124,6 +124,26 @@
     font-size: 16px;
     line-height: 1.62;
   }
+}
+
+.booking-form__input, .booking-form__textarea {
+  height: 24px;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.booking-form__field:hover .booking-form__input, .booking-form__field:hover .booking-form__textarea,
+.booking-form__text-field:hover .booking-form__input,
+.booking-form__text-field:hover .booking-form__textarea {
+  color: currentColor;
+  border-color: currentColor;
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -470,6 +490,9 @@ a {
 .menu-container {
   position: fixed;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   padding: 118px 49px;
   background-color: #ffffff;
@@ -665,26 +688,15 @@ a {
 }
 
 .company-socials {
-  position: relative;
+  margin-left: 100px;
   letter-spacing: 0.2em;
   color: #303030;
-}
-
-.company-socials::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
 }
 
 @media screen and (max-width: 767px) {
   .company-socials {
     font-size: 14px;
     line-height: 1.36;
-  }
-  .company-socials::before {
-    margin-right: 40px;
   }
 }
 
@@ -699,6 +711,21 @@ a {
   .company-socials__item:not(:last-child) {
     margin-bottom: 24px;
   }
+}
+
+.company-socials__item:first-child {
+  position: relative;
+}
+
+.company-socials__item:first-child::before {
+  position: absolute;
+  right: calc(100% + 40px);
+  top: 50%;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 @media screen and (max-width: 767px) {
@@ -1105,5 +1132,122 @@ a {
 
 .gallery__img {
   max-width: 100%;
+}
+
+.booking__wrap {
+  background-color: #191c26;
+}
+
+@media screen and (max-width: 1199px) {
+  .booking__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .booking {
+    width: 100%;
+  }
+}
+
+.booking__title {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .booking__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .booking__title {
+    margin-bottom: 44px;
+  }
+}
+
+.booking-form {
+  margin-bottom: 44px;
+}
+
+.booking-form__wrap {
+  margin-bottom: 44px;
+}
+
+.booking-form__field {
+  position: relative;
+  display: block;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form__field:hover {
+  color: #ffffff;
+}
+
+.booking-form__field:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+@media screen and (max-width: 767px) {
+  .booking-form__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking-form__input {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+.booking-form__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform 300ms ease-in-out;
+}
+
+.booking-form__input:focus + .booking-form__label,
+.booking-form__input:not(:placeholder-shown) + .booking-form__label {
+  transform: translateY(-35px);
+  color: #ffffff;
+}
+
+.booking-form__text-field {
+  position: relative;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form__text-field:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.booking-form__textarea {
+  height: 76px;
+  width: 100%;
+  padding: 8px;
+  resize: none;
+}
+
+.booking-form__textarea::placeholder {
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking__btn {
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
