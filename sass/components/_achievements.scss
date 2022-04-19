@@ -4,18 +4,41 @@
   flex-wrap: wrap;
 }
 
-// .achievements__box--count {
-//   padding-left: 100px;
-//   padding-right: 130px;
-// }
+.achievements__box--desc {
+  @include media(768px) {
+    width: 500px;
+    margin-bottom: 44px;
+  }
+}
+
+.achievements__box--count {
+  @include media(768px) {
+    width: 450px;
+    margin-left: auto;
+  }
+}
 
 .achievements__item {
   @include centeredFlex;
   color: $primaryTextColor;
   background-color: $secondaryBgdColor;
+
+  &:nth-child(2n-1) {
+    margin-right: 30px;
+  }
+  &:nth-child(2n) {
+    margin-top: 30px;
+  }
+  &:hover {
+    transform: scale(1.2);
+    background-color: $transparentTextColorInput;
+    cursor: auto;
+  }
+
   // width: 170px;
   transform: scale(1);
   transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+
   @include media(479px, max-width) {
     width: calc((100% - 30px) / 2);
     height: 133px;
@@ -25,23 +48,14 @@
     width: calc((100% - 30px) / 2);
     height: 133px;
   }
-
-  &:nth-child(2n-1) {
-    margin-right: 30px;
-  }
-
-  &:nth-child(2n) {
-    margin-top: 30px;
-  }
-
-  &:hover {
-    transform: scale(1.2);
-    background-color: $transparentTextColorInput;
-    cursor: auto;
-  }
 }
 
 .achievements__wrap {
+  height: auto;
+  @include centeredFlex;
+  flex-wrap: wrap;
+  text-align: center;
+
   @include media(479px, max-width) {
     width: 100%;
     max-width: 122px;
@@ -49,12 +63,6 @@
   @include media(480px) {
     width: 122px;
   }
-
-  height: auto;
-
-  @include centeredFlex;
-  flex-wrap: wrap;
-  text-align: center;
 }
 
 .achievements__count {
@@ -81,4 +89,5 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  letter-spacing: 0;
 }
