@@ -23,6 +23,10 @@
     margin: 15px;
   }
 
+  @include media(768px) {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
   //   width: calc((100% - 3 * 30) / 4);
 
   //   &:not(:last-child) {

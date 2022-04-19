@@ -1381,6 +1381,13 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
+}
+
 .gallery__img {
   max-width: 100%;
 }
