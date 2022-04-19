@@ -8,7 +8,6 @@
   @extend %pre-title;
 
   color: $primaryTextColor;
-  margin-bottom: 20px;
 }
 
 .masters__title--primary {
@@ -22,16 +21,20 @@
   @extend %list;
 
   display: flex;
-  @include media(767px, max-width) {
+  @include media(1199px, max-width) {
     flex-wrap: wrap;
+  }
+  @include media(768px) {
+    justify-content: center;
   }
 }
 
 .masters__item {
-  width: 100%;
-
   &:not(:last-child) {
     margin-bottom: 64px;
+  }
+  @include media(767px, max-width) {
+    width: 100%;
   }
   @include media(1200px) {
     width: calc((100% - 30px * 2) / 3);
@@ -67,6 +70,7 @@
   // for all
   margin-bottom: 30px;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.36;
   color: $accentColor;
