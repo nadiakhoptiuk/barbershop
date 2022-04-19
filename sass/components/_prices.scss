@@ -1,25 +1,34 @@
 .prices {
+  width: 100%;
   @extend %section;
   background-color: $pricesBgdColor;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  // mobile
   @include media(767px, max-width) {
     background-image: url("../images/prices-bg-mobile.png");
-  }
-  @include ratio2 {
-    background-image: url("../images/prices-bg-mobile@2x.png");
-  }
-  @include ratio3 {
-    background-image: url("../images/prices-bg-mobile@3x.png");
-  }
-  @include media(1199px, max-width) {
-    width: 100%;
-  }
 
+    @include ratio2 {
+      background-image: url("../images/prices-bg-mobile@2x.png");
+    }
+    @include ratio3 {
+      background-image: url("../images/prices-bg-mobile@3x.png");
+    }
+  }
+  // tablet
+  @include media(768px) {
+    background-image: url("../images/prices-bg-tablet.png");
+
+    @include ratio2 {
+      background-image: url("../images/prices-bg-tablet@2x.png");
+    }
+    @include ratio3 {
+      background-image: url("../images/prices-bg-tablet@3x.png");
+    }
+  }
+  // desktop
   @include media(1200px) {
-    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
   }

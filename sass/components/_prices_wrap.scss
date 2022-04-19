@@ -3,13 +3,10 @@
   margin-bottom: 50px;
 
   @include media(767px, max-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
   }
   @include media(768px) {
-    padding: 0;
+    padding: 30px 40px;
   }
   @include media(1199px, max-width) {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -20,6 +17,7 @@
 
 .prices__list {
   @extend %list;
+  font-weight: 400;
   letter-spacing: inherit;
   color: $greyTextColor;
 
@@ -33,6 +31,9 @@
   @include media(768px) {
     font-size: 18px;
     line-height: 1.67;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
   @include media(1200px) {
     width: 585px;
