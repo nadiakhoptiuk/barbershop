@@ -24,10 +24,14 @@
     }
   }
   @include media(479px, max-width) {
-    left: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
   }
-  @include media(480px) {
-    left: 133px;
+  @include media(767px, max-width) {
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 347px;
   }
   @include media(768px) {
