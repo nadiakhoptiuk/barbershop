@@ -5,6 +5,8 @@
 // }
 
 .menu-container {
+  width: 72%;
+
   @include media(767px, max-width) {
     position: absolute;
     top: 0;
@@ -32,7 +34,6 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 347px;
   }
   @include media(768px) {
     position: static;
