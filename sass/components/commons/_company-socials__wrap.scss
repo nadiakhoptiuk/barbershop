@@ -1,11 +1,6 @@
-// socials at header
-// .company-socials__wrap {
-//   display: flex;
-// }
-
+// universal
 .company-socials {
   @extend %list;
-  margin-left: 100px;
 
   letter-spacing: 0.2em;
   color: $primaryTextColor;
@@ -14,26 +9,30 @@
     font-size: 14px;
     line-height: 1.36;
   }
-
-  // align-items: flex-end;
-  // width: 93px;
-  // height: 680px;
-
-  //   font-size: 11px;
-  //   line-height: 1.36;
-  // padding-bottom: 40px;
+  @include media(768px) {
+    font-size: 11px;
+    line-height: 1.36;
+  }
 }
 
-.company-socials--hero {
+// universal
+.company-socials__link {
+  @extend %company-socials__link;
+}
+
+// socials at menu
+.company-socials__wrap--menu {
+  @include media(768px) {
+    display: none;
+  }
+}
+
+.company-socials--menu {
   @include media(767px, max-width) {
     font-size: 14px;
     line-height: 1.36;
+    margin-left: 100px;
   }
-
-  // @extend %company-socials;
-
-  // transform: rotate(-90deg) translateY(100%);
-  // transform-origin: left bottom;
 }
 
 .company-socials__item--menu:not(:last-child) {
@@ -58,12 +57,6 @@
     background-color: currentColor;
   }
 }
-
-// .company-socials__link--hero {
-//     @extend %company-socials__link;
-//     padding-top: 26px;
-//     padding-bottom: 26px;
-// }
 
 // // socials at footer
 .company-socials--footer {
@@ -104,4 +97,44 @@
   line-height: 1.36;
   // padding-top: 25px;
   // padding-bottom: 25px;
+}
+
+// // socials at hero
+.company-socials__wrap--hero {
+  @include media(767px, max-width) {
+    display: none;
+  }
+  @include media(768px) {
+    height: auto;
+    width: 114px;
+    padding-left: 24px;
+    padding-bottom: 140px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.company-socials--hero {
+  display: flex;
+
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: left bottom;
+
+  &::before {
+    position: absolute;
+    right: calc(100% + 40px);
+    top: 50%;
+
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+
+.company-socials__item--hero {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }

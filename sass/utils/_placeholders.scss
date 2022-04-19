@@ -118,7 +118,6 @@
 // socials
 %company-socials {
   @extend %list;
-  @include centeredFlex;
 }
 
 %company-socials__link {

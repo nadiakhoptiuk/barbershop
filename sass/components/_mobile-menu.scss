@@ -5,11 +5,17 @@
 // }
 
 .menu-container {
-  width: 72%;
-
-  @include media(767px, max-width) {
-    position: absolute;
+  @include media(479px, max-width) {
+    width: 72%;
+    position: fixed;
     top: 0;
+    right: 0;
+  }
+  @include media(767px, max-width) {
+    width: 72%;
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,21 +31,12 @@
       transform: translateX(0);
     }
   }
-  @include media(479px, max-width) {
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-  @include media(767px, max-width) {
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
   @include media(768px) {
     position: static;
+    display: flex;
+    padding-top: 8px;
 
     background-color: transparent;
-    display: block;
   }
 }
 

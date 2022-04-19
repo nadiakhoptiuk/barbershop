@@ -1,5 +1,4 @@
 .prices {
-  width: 100%;
   @extend %section;
   background-color: $pricesBgdColor;
   background-repeat: no-repeat;
@@ -14,6 +13,15 @@
   }
   @include ratio3 {
     background-image: url("../images/prices-bg-mobile@3x.png");
+  }
+  @include media(1199px, max-width) {
+    width: 100%;
+  }
+
+  @include media(1200px) {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 

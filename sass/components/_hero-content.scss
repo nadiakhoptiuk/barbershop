@@ -1,13 +1,97 @@
-// .hero-content {
-//     padding: 272px 0px 206px 96px;
-//     flex-grow: 1;
+.hero-content {
+  padding-top: 208px;
+  padding-bottom: 183px;
 
-//     background-image: linear-gradient(to right, $heroGradientColor, $heroGradientColor), url('../images/hero.jpg');
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-// }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 
+  @include media(767px, max-width) {
+    width: 100%;
+
+    background-image: linear-gradient(
+        to right,
+        $heroGradientColor,
+        $heroGradientColor
+      ),
+      url("../images/hero-bg-mobile.jpg");
+  }
+  @include ratio2 {
+    background-image: linear-gradient(
+        to right,
+        $heroGradientColor,
+        $heroGradientColor
+      ),
+      url("../images/hero-bg-mobile@2x.jpg");
+  }
+  @include ratio3 {
+    background-image: linear-gradient(
+        to right,
+        $heroGradientColor,
+        $heroGradientColor
+      ),
+      url("../images/hero-bg-mobile@3x.jpg");
+  }
+
+  @include media(768px) {
+    padding: 280px 0px 234px 70px;
+    flex-grow: 1;
+  }
+
+  // tablet
+  @include media(768px) {
+    background-image: linear-gradient(
+        to right,
+        $heroGradientColor,
+        $heroGradientColor
+      ),
+      url("../images/hero-bg-tablet.jpg");
+
+    @include ratio2 {
+      background-image: linear-gradient(
+          to right,
+          $heroGradientColor,
+          $heroGradientColor
+        ),
+        url("../images/hero-bg-tablet@2x.jpg");
+    }
+    @include ratio2 {
+      background-image: linear-gradient(
+          to right,
+          $heroGradientColor,
+          $heroGradientColor
+        ),
+        url("../images/hero-bg-tablet@2x.jpg");
+    }
+  }
+}
+
+//   background-image: linear-gradient(
+//       to right,
+//       $heroGradientColor,
+//       $heroGradientColor
+//     ),
+//     url("../images/hero.jpg");
+
+.hero-content__pre-title {
+  // for all
+  @extend %pre-title;
+  margin-bottom: 20px;
+  color: $preTitleColorDark;
+}
+
+.hero-content__title {
+  // for all
+  @extend %section-title;
+
+  color: $lightTitleBtnColor;
+}
+
+.hero-content__after-title {
+  max-width: 306px;
+  @extend %after-title;
+  color: $greyTextColor;
+}
 // .hero-content__title {
 //     margin-bottom: 20px;
 
@@ -39,3 +123,21 @@
 //     width: 406px;
 //     color: $greyTextColor;
 // }
+
+.hero-content {
+  @include media(767px, max-width) {
+    padding-left: 31px;
+  }
+  //   padding: 272px 0px 206px 96px;
+  //   flex-grow: 1;
+}
+
+.hero__desc {
+  @include media(480px) {
+    width: 448px;
+    margin: 0 auto;
+  }
+  @include media(768px) {
+    width: 100%;
+  }
+}

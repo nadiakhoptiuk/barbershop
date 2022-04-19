@@ -1,12 +1,8 @@
 .main-nav {
   @extend %list;
-  @include media(767px, max-width) {
-    font-size: 18px;
-    line-height: 1.39;
-    letter-spacing: 0.1em;
-    margin-bottom: 64px;
-
-    color: $primaryTextColor;
+  @include media(768px) {
+    display: flex;
+    padding-top: 12px;
   }
 }
 
@@ -14,6 +10,11 @@
   @include media(767px, max-width) {
     &:not(:last-child) {
       margin-bottom: 24px;
+    }
+  }
+  @include media(768px) {
+    &:not(:last-child) {
+      margin-right: 24px;
     }
   }
 }
@@ -27,6 +28,21 @@
     color: $accentColor;
     transform: scale(1.2);
   }
+  @include media(767px, max-width) {
+    margin-bottom: 64px;
+
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+    color: $primaryTextColor;
+  }
+  @include media(768px) {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: $lightTitleBtnColor;
+  }
+
   //     padding-top: 15px;
   //   padding-bottom: 15px;
   //   display: block;

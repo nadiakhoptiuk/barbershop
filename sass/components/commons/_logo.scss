@@ -1,10 +1,8 @@
 .logo {
   width: 66px;
   height: 55px;
-  flex-grow: 1;
 
   transform: scale(1);
-
   @include transitioned(transform);
 
   &:hover,
@@ -13,6 +11,11 @@
   }
   @include media(767px, max-width) {
     fill: $lightTitleBtnColor;
+  }
+  @include media(768px) {
+    margin-right: 60px;
+    margin-left: 10px;
+    align-self: flex-start;
   }
 
   // margin-right: 67px;

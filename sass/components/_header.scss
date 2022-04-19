@@ -3,45 +3,70 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
 
   overflow: hidden;
+
+  @include media(767px, max-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include media(768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+.header__contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .header__tel {
   display: block;
-  font-size: 18px;
-  line-height: 1.39;
-  letter-spacing: 0.1em;
-  margin-bottom: 24px;
 
-  color: $primaryTextColor;
+  @include media(767px, max-width) {
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+
+    color: $primaryTextColor;
+  }
+  @include media(768px) {
+    margin-bottom: 0;
+
+    font-size: 12px;
+    line-height: 1.33;
+    color: $lightTitleBtnColor;
+  }
 }
 
 .header__btn {
   @extend %btn;
   @include media(767px, max-width) {
     width: 194px;
-    height: 40px;
     margin-bottom: 64px;
     color: $primaryTextColor;
+  }
+  @include media(768px) {
+    margin-bottom: 20px;
+    color: $lightTitleBtnColor;
   }
   //   margin-right: 8px;
 }
 
-// .nav {
-//     @include centeredFlex;
-// }
+.nav {
+  @include media(768px) {
+    margin-right: 47px;
+  }
+}
 
 // .header__contacts {
 //     margin-left: auto;
