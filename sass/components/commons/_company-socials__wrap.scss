@@ -63,6 +63,7 @@
   @extend %company-socials;
   margin-left: auto;
   margin-bottom: 20px;
+  display: flex;
 }
 
 .company-socials__item--footer {
