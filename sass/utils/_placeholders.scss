@@ -85,7 +85,7 @@
 
 %after-title {
   font-weight: 400;
-  @include media(767px, max-width) {
+  @include media(1199px, max-width) {
     font-size: 16px;
     line-height: 1.62;
   }

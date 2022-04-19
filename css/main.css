@@ -119,7 +119,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero-content__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary, .contacts__after-title {
     font-size: 16px;
     line-height: 1.62;
@@ -911,9 +911,27 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .about-us__container {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .about-us__photos {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__photos {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -945,6 +963,7 @@ a {
 
 .about-us__unique-text {
   margin-bottom: 40px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: inherit;

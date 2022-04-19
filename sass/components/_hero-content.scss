@@ -66,13 +66,6 @@
   }
 }
 
-//   background-image: linear-gradient(
-//       to right,
-//       $heroGradientColor,
-//       $heroGradientColor
-//     ),
-//     url("../images/hero.jpg");
-
 .hero-content__pre-title {
   // for all
   @extend %pre-title;
@@ -83,7 +76,6 @@
 .hero-content__title {
   // for all
   @extend %section-title;
-
   color: $lightTitleBtnColor;
 }
 
@@ -92,6 +84,7 @@
   @extend %after-title;
   color: $greyTextColor;
 }
+
 // .hero-content__title {
 //     margin-bottom: 20px;
 
