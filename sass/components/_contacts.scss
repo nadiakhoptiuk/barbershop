@@ -5,6 +5,7 @@
   background-position: left;
 
   @include media(767px, max-width) {
+    width: 100%;
     background-image: url("../images/contacts-bg-mobile.png");
     @include ratio2 {
       background-image: url("../images/contacts-bg-mobile@2x.png");
@@ -14,9 +15,17 @@
     }
   }
 
-  @include media(1199px, max-width) {
+  @include media(768px) {
     width: 100%;
+    background-image: url("../images/contacts-bg-tablet.png");
+    @include ratio2 {
+      background-image: url("../images/contacts-bg-tablet@2x.png");
+    }
+    @include ratio3 {
+      background-image: url("../images/contacts-bg-tablet@3x.png");
+    }
   }
+
   @include media(1200px) {
     width: calc((100% - 40px) / 2);
     padding-left: 100px;
@@ -48,7 +57,7 @@
   @include media(768px) {
     display: flex;
   }
-  @include media(768px) {
+  @include media(1200px) {
     display: block;
   }
 }

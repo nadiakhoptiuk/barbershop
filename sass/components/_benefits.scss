@@ -1,7 +1,8 @@
 .benefits {
   @extend %section;
-  // padding-top: 114px;
-  // padding-bottom: 130px;
+  @include media(1200px) {
+    padding-top: 121px;
+  }
 }
 
 .benefits__container {

@@ -36,11 +36,17 @@
       margin-bottom: 64px;
     }
   }
+  @include media(768px) {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
   @include media(1200px) {
     width: calc((100% - 30px * 2) / 3);
 
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 }
