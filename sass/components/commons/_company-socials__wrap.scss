@@ -108,10 +108,13 @@
   @include media(768px) {
     height: auto;
     width: 114px;
-    padding-left: 24px;
+    padding-left: 35px;
     padding-bottom: 140px;
     display: flex;
     align-items: flex-end;
+  }
+  @include media(1200px) {
+    padding-left: 38px;
   }
 }
 

@@ -33,13 +33,11 @@
       url("../images/hero-bg-mobile@3x.jpg");
   }
 
+  // tablet
   @include media(768px) {
     padding: 280px 0px 234px 70px;
     flex-grow: 1;
-  }
 
-  // tablet
-  @include media(768px) {
     background-image: linear-gradient(
         to right,
         $heroGradientColor,
@@ -67,13 +65,13 @@
 
   // desktop
   @include media(1200px) {
+    padding: 272px 0px 206px 96px;
     background-image: linear-gradient(
         to right,
         $heroGradientColor,
         $heroGradientColor
       ),
       url("../images/hero-bg-desktop.jpg");
-
     @include ratio2 {
       background-image: linear-gradient(
           to right,
@@ -104,12 +102,20 @@
   // for all
   @extend %section-title;
   color: $lightTitleBtnColor;
+  @include media(1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+  }
 }
 
 .hero-content__after-title {
   max-width: 306px;
   @extend %after-title;
   color: $greyTextColor;
+  @include media(1200px) {
+    max-width: 406px;
+  }
 }
 
 // .hero-content__title {

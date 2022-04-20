@@ -85,11 +85,15 @@
 
 %after-title {
   font-weight: 400;
+
   @include media(1199px, max-width) {
     font-size: 16px;
     line-height: 1.62;
   }
-
+  @include media(1200px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
   //   font-size: 18px;
   //   line-height: 1.67;
 }

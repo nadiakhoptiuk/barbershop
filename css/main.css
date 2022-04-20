@@ -126,6 +126,13 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-content__after-title, .about-us__after-title--secondary, .benefits__after-title--secondary, .contacts__after-title {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
 .booking-form__input, .booking-form__textarea {
   height: 24px;
   font-style: normal;
@@ -852,10 +859,16 @@ a {
   .company-socials__wrap--hero {
     height: auto;
     width: 114px;
-    padding-left: 24px;
+    padding-left: 35px;
     padding-bottom: 140px;
     display: flex;
     align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-socials__wrap--hero {
+    padding-left: 38px;
   }
 }
 
@@ -911,11 +924,6 @@ a {
   .hero-content {
     padding: 280px 0px 234px 70px;
     flex-grow: 1;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-content {
     background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/hero-bg-tablet.jpg");
   }
 }
@@ -934,6 +942,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero-content {
+    padding: 272px 0px 206px 96px;
     background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/hero-bg-desktop.jpg");
   }
 }
@@ -959,9 +968,23 @@ a {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-content__title {
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+  }
+}
+
 .hero-content__after-title {
   max-width: 306px;
   color: #9da4bd;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content__after-title {
+    max-width: 406px;
+  }
 }
 
 @media screen and (max-width: 767px) {
