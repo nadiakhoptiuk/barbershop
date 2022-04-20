@@ -1287,10 +1287,24 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .achievements__box--desc {
+    width: 457px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .achievements__box--count {
     width: 450px;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .achievements__box--count {
+    width: 50%;
+    padding-left: 100px;
+    margin: 0;
   }
 }
 
@@ -1329,6 +1343,14 @@ a {
   .achievements__item {
     padding: 20px 35px;
     width: calc((100% - 30px) / 2);
+    height: 133px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .achievements__item {
+    padding: 20px 35px;
+    width: 170px;
     height: 133px;
   }
 }
