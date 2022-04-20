@@ -37,7 +37,7 @@
   list-style: none;
 }
 
-.masters__photo, .gallery__img {
+.about-us__img, .masters__photo, .gallery__img {
   display: block;
 }
 
@@ -1006,6 +1006,13 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-top: 139px;
+    padding-bottom: 121px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-us__container {
     display: flex;
@@ -1024,9 +1031,28 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about-us__photos {
+    display: flex;
+    margin-right: 64px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-us__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us__desc {
+    max-width: 483px;
   }
 }
 
