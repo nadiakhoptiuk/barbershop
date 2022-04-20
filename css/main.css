@@ -1703,6 +1703,13 @@ a {
   flex-direction: column-reverse;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .footer-copyright {
   font-style: normal;
   font-size: 11px;

@@ -14,7 +14,11 @@
 .footer__container {
   display: flex;
   flex-direction: column-reverse;
-  //   align-items: center;
+
+  @include media(768px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .footer-copyright {
