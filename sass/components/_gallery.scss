@@ -22,16 +22,14 @@
     width: 100%;
     margin: 15px;
   }
-
   @include media(768px) {
     width: calc((100% - 30px - 30px) / 2);
     margin: 15px;
   }
-  //   width: calc((100% - 3 * 30) / 4);
-
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
+  @include media(1200px) {
+    width: calc((100% - 3 * 30px - 30px) / 4);
+    margin: 15px;
+  }
 }
 
 .gallery__img {

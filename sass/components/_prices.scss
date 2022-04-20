@@ -31,6 +31,14 @@
   @include media(1200px) {
     max-width: 1280px;
     margin: 0 auto;
+
+    background-image: url("../images/prices-bg-desktop.png");
+    @include ratio2 {
+      background-image: url("../images/prices-bg-desktop@2x.png");
+    }
+    @include ratio3 {
+      background-image: url("../images/prices-bg-desktop@3x.png");
+    }
   }
 }
 

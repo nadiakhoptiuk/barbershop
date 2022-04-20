@@ -1139,6 +1139,19 @@ a {
   .prices {
     max-width: 1280px;
     margin: 0 auto;
+    background-image: url("../images/prices-bg-desktop.png");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .prices {
+    background-image: url("../images/prices-bg-desktop@2x.png");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 3dppx), screen and (min-width: 1200px) and (min-resolution: 288dpi) {
+  .prices {
+    background-image: url("../images/prices-bg-desktop@3x.png");
   }
 }
 
@@ -1536,6 +1549,13 @@ a {
 @media screen and (min-width: 768px) {
   .gallery__item {
     width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    width: calc((100% - 3 * 30px - 30px) / 4);
     margin: 15px;
   }
 }
