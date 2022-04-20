@@ -64,6 +64,33 @@
         url("../images/hero-bg-tablet@2x.jpg");
     }
   }
+
+  // desktop
+  @include media(1200px) {
+    background-image: linear-gradient(
+        to right,
+        $heroGradientColor,
+        $heroGradientColor
+      ),
+      url("../images/hero-bg-desktop.jpg");
+
+    @include ratio2 {
+      background-image: linear-gradient(
+          to right,
+          $heroGradientColor,
+          $heroGradientColor
+        ),
+        url("../images/hero-bg-desktop@2x.jpg");
+    }
+    @include ratio2 {
+      background-image: linear-gradient(
+          to right,
+          $heroGradientColor,
+          $heroGradientColor
+        ),
+        url("../images/hero-bg-desktop@2x.jpg");
+    }
+  }
 }
 
 .hero-content__pre-title {

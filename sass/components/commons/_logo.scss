@@ -18,7 +18,10 @@
     align-self: flex-start;
   }
 
-  // margin-right: 67px;
+  @include media(1200px) {
+    margin-right: 70px;
+    align-self: flex-start;
+  }
 }
 
 // ---------- button-anchor ----------
