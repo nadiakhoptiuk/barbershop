@@ -64,6 +64,9 @@
   margin-left: auto;
   margin-bottom: 20px;
   display: flex;
+  @include media(768px) {
+    margin-bottom: 0;
+  }
 }
 
 .company-socials__item--footer {

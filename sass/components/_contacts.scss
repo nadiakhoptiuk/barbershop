@@ -29,6 +29,7 @@
   @include media(1200px) {
     width: calc((100% - 40px) / 2);
     padding-left: 100px;
+    background-image: none;
   }
 }
 

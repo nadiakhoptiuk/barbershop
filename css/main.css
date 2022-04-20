@@ -819,6 +819,12 @@ a {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .company-socials--footer {
+    margin-bottom: 0;
+  }
+}
+
 .company-socials__item--footer {
   display: flex;
   align-items: center;
@@ -1814,6 +1820,7 @@ a {
   .contacts {
     width: calc((100% - 40px) / 2);
     padding-left: 100px;
+    background-image: none;
   }
 }
 
