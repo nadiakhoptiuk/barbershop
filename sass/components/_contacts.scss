@@ -4,30 +4,33 @@
   background-repeat: no-repeat;
   background-position: left;
 
-  background-image: url("../images/contacts-bg-mobile.png");
-  @include ratio2 {
-    background-image: url("../images/contacts-bg-mobile@2x.png");
-  }
-  @include ratio3 {
-    background-image: url("../images/contacts-bg-mobile@3x.png");
+  @include media(767px, max-width) {
+    background-image: url("../images/contacts-bg-mobile.png");
+    @include ratio2 {
+      background-image: url("../images/contacts-bg-mobile@2x.png");
+    }
+    @include ratio3 {
+      background-image: url("../images/contacts-bg-mobile@3x.png");
+    }
   }
 
   @include media(1199px, max-width) {
     width: 100%;
   }
   @include media(1200px) {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+    width: calc((100% - 40px) / 2);
+    padding-left: 100px;
   }
-  //   width: calc((100% / 2) - 15px);
-  //   padding-left: 100px;
 }
 
 .contacts__container {
   @include media(1199px, max-width) {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  @include media(1200px) {
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -45,6 +48,9 @@
   @include media(768px) {
     display: flex;
   }
+  @include media(768px) {
+    display: block;
+  }
 }
 
 .address {
@@ -59,11 +65,19 @@
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
+  @include media(1200px) {
+    width: 270px;
+    margin-bottom: 70px;
+    margin-right: 0;
+  }
 }
 
 .shedule {
   @include media(768px) {
     width: calc((100% - 30px) / 2);
+  }
+  @include media(1200px) {
+    width: 100%;
   }
 }
 
