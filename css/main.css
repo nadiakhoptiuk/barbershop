@@ -1173,6 +1173,13 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .prices__wrap {
+    display: flex;
+    padding: 0;
+  }
+}
+
 .prices__list {
   font-weight: 400;
   letter-spacing: inherit;
@@ -1201,8 +1208,11 @@ a {
 
 @media screen and (min-width: 1200px) {
   .prices__list {
-    width: 585px;
+    width: 50%;
     padding: 30px 40px;
+  }
+  .prices__list:not(:last-child) {
+    margin-bottom: 0;
   }
   .prices__list--left {
     background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
