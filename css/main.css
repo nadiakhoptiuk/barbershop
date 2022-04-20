@@ -1458,6 +1458,12 @@ a {
   margin-bottom: 44px;
 }
 
+@media screen and (min-width: 768px) {
+  .booking-form__wrap {
+    display: flex;
+  }
+}
+
 .booking-form__field {
   position: relative;
   display: block;
@@ -1468,20 +1474,23 @@ a {
   color: #ffffff;
 }
 
-.booking-form__field:not(:last-child) {
-  margin-bottom: 44px;
-}
-
 @media screen and (max-width: 767px) {
-  .booking-form__input {
-    width: 100%;
+  .booking-form__field:not(:last-child) {
+    margin-bottom: 44px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .booking-form__input {
+  .booking-form__field {
     width: calc((100% - 30px) / 2);
   }
+  .booking-form__field:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.booking-form__input {
+  width: 100%;
 }
 
 .booking-form__label {
@@ -1499,7 +1508,7 @@ a {
 
 .booking-form__input:focus + .booking-form__label,
 .booking-form__input:not(:placeholder-shown) + .booking-form__label {
-  transform: translateY(-35px);
+  transform: translateY(-200%);
   color: #ffffff;
 }
 
@@ -1514,6 +1523,7 @@ a {
 }
 
 .booking-form__textarea {
+  display: block;
   height: 76px;
   width: 100%;
   padding: 8px;
@@ -1531,7 +1541,18 @@ a {
 
 .booking__btn {
   display: block;
-  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .booking__btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking__btn {
+    margin-right: auto;
+  }
 }
 
 .contacts {
@@ -1585,6 +1606,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__wrap {
+    display: flex;
+  }
+}
+
 .address {
   font-style: normal;
   font-weight: 400;
@@ -1592,6 +1619,19 @@ a {
   line-height: 1.67;
   letter-spacing: inherit;
   color: #9da4bd;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shedule {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 @media screen and (max-width: 767px) {

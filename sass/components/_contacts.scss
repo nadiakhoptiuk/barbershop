@@ -41,6 +41,12 @@
   }
 }
 
+.contacts__wrap {
+  @include media(768px) {
+    display: flex;
+  }
+}
+
 .address {
   font-style: normal;
   font-weight: 400;
@@ -48,6 +54,17 @@
   line-height: 1.67;
   letter-spacing: inherit;
   color: $greyTextColor;
+
+  @include media(768px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+.shedule {
+  @include media(768px) {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .contacts__list {

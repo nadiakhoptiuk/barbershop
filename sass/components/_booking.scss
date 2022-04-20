@@ -63,7 +63,9 @@
 .booking-form__wrap {
   // for all
   margin-bottom: 44px;
-  // display: flex;
+  @include media(768px) {
+    display: flex;
+  }
 }
 
 .booking-form__field {
@@ -74,24 +76,23 @@
   &:hover {
     color: $lightTitleBtnColor;
   }
-
-  &:not(:last-child) {
-    margin-bottom: 44px;
+  @include media(767px, max-width) {
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
   }
+  @include media(768px) {
+    width: calc((100% - 30px) / 2);
 
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .booking-form__input {
   @extend %inputs;
-  @include media(767px, max-width) {
-    width: 100%;
-  }
-  @include media(768px) {
-    width: calc((100% - 30px) / 2);
-  }
+  width: 100%;
 }
 
 .booking-form__label {
@@ -110,7 +111,7 @@
 
   .booking-form__input:focus + &,
   .booking-form__input:not(:placeholder-shown) + & {
-    transform: translateY(-35px);
+    transform: translateY(-200%);
     color: $lightTitleBtnColor;
   }
 }
@@ -127,6 +128,7 @@
 }
 
 .booking-form__textarea {
+  display: block;
   height: 76px;
   width: 100%;
   //   width: 560px;
@@ -134,7 +136,6 @@
   resize: none;
 
   @extend %inputs;
-
   &::placeholder {
     font-style: normal;
     font-size: 11px;
@@ -148,5 +149,11 @@
 .booking__btn {
   @extend %btn;
   display: block;
-  margin: 0 auto;
+
+  @include media(767px, max-width) {
+    margin: 0 auto;
+  }
+  @include media(768px) {
+    margin-right: auto;
+  }
 }
