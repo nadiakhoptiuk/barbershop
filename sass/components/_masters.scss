@@ -30,11 +30,11 @@
 }
 
 .masters__item {
-  &:not(:last-child) {
-    margin-bottom: 64px;
-  }
   @include media(767px, max-width) {
     width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
   }
   @include media(1200px) {
     width: calc((100% - 30px * 2) / 3);

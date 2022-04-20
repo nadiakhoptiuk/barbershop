@@ -1432,13 +1432,12 @@ a {
   }
 }
 
-.masters__item:not(:last-child) {
-  margin-bottom: 64px;
-}
-
 @media screen and (max-width: 767px) {
   .masters__item {
     width: 100%;
+  }
+  .masters__item:not(:last-child) {
+    margin-bottom: 64px;
   }
 }
 
