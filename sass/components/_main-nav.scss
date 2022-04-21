@@ -1,5 +1,8 @@
 .main-nav {
   @extend %list;
+  @include media(767px, max-width) {
+    margin-bottom: 64px;
+  }
   @include media(768px) {
     display: flex;
     padding-top: 12px;

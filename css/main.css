@@ -446,7 +446,6 @@ a {
 
 .page.menu-open {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
@@ -482,10 +481,12 @@ a {
   justify-content: space-between;
 }
 
-.header__contacts {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -674,6 +675,12 @@ a {
   .logo {
     margin-right: 70px;
     align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    margin-bottom: 64px;
   }
 }
 

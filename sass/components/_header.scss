@@ -23,9 +23,11 @@
 }
 
 .header__contacts {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  @include media(768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   @include media(1200px) {
     flex-direction: row;
     margin-left: auto;
