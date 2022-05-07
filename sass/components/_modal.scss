@@ -3,12 +3,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 570px;
-  height: 450px;
+  max-width: 570px;
+  width: 80%;
+  min-height: 450px;
+  height: max-content;
   z-index: 3;
-  padding: 60px;
+  padding: 60px 40px;
 
   border-radius: 4px;
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
+    -1px 0px 3px rgba(0, 0, 0, 0.16);
   background-color: $bookingSectionBgdColor;
   visibility: visible;
   opacity: 1;
