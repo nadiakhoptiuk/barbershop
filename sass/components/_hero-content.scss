@@ -5,6 +5,9 @@
 .hero-content {
   position: relative;
   @include media(767px, max-width) {
+    height: 680px;
+    padding-top: 208px;
+    padding-left: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

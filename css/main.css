@@ -933,6 +933,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero-content {
+    height: 680px;
+    padding-top: 208px;
+    padding-left: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -1977,6 +1980,12 @@ img {
 
 .swiper.mySwiper > .swiper-wrapper {
   height: 680px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper.mySwiper > .swiper-wrapper {
+    display: none;
+  }
 }
 
 .slider-pagination.slider-pagination--barbershop .swiper-pagination-bullet {
