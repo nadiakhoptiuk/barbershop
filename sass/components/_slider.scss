@@ -1,0 +1,16 @@
+.swiper.mySwiper > .swiper-wrapper {
+  height: 680px;
+}
+
+.slider-pagination.slider-pagination--barbershop .swiper-pagination-bullet {
+  margin-right: 52px;
+  width: 8px;
+  height: 2px;
+  background-color: $greyTextColor;
+  margin-bottom: 12px;
+
+  &-active {
+    width: 17px;
+    background-color: $primaryBgdColor;
+  }
+}
