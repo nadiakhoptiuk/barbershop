@@ -118,38 +118,6 @@
   }
 }
 
-// .hero-content__title {
-//     margin-bottom: 20px;
-
-//     font-family: 'Raleway', sans-serif;
-//     font-size: 72px;
-//     line-height: 1.18;
-//     letter-spacing: 0.05em;
-//     color: $lightTitleBtnColor;
-// }
-
-// .hero-content__pre-title {
-//     @extend %pre-title;
-//     margin-bottom: 20px;
-
-//     color: $preTitleColorHero;
-//     display: flex;
-//     align-items: center;
-
-//     &::before {
-//         width: 64px;
-//         margin-right: 21px;
-//         content: '';
-//     }
-// }
-
-// .hero-content__after-title {
-//     @extend %after-title;
-
-//     width: 406px;
-//     color: $greyTextColor;
-// }
-
 .hero-content {
   @include media(767px, max-width) {
     padding-left: 31px;

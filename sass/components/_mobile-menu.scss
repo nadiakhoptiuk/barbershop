@@ -1,10 +1,4 @@
 .menu-container {
-  @include media(479px, max-width) {
-    width: 72%;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
   @include media(767px, max-width) {
     width: 72%;
     position: fixed;
