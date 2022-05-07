@@ -1,5 +1,8 @@
 .swiper.mySwiper > .swiper-wrapper {
   height: 680px;
+  @include media(767px, max-width) {
+    display: none;
+  }
 }
 
 .slider-pagination.slider-pagination--barbershop .swiper-pagination-bullet {

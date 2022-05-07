@@ -3,7 +3,11 @@
 }
 
 .hero-content {
+  position: relative;
   @include media(767px, max-width) {
+    height: 680px;
+    padding-top: 208px;
+    padding-left: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -28,17 +32,6 @@
         $heroGradientColor
       ),
       url("../images/hero-bg-mobile@3x.jpg");
-  }
-
-  // tablet
-  @include media(768px) {
-    position: relative;
-    width: calc(100% - 30px - 140px);
-    padding: 0;
-    flex-grow: 1;
-  }
-  @include media(1200px) {
-    width: calc(100% - 30px - 140px);
   }
 }
 
@@ -76,6 +69,12 @@
   }
   @include media(768px) {
     position: absolute;
+    left: 70px;
+    top: 280px;
+    z-index: 2;
+    width: max-content;
+  }
+  @include media(1200px) {
     left: 96px;
     top: 262px;
     z-index: 2;
