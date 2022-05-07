@@ -29,10 +29,9 @@ img {
   color: $primaryTextColor;
 
   @include transitioned(background-color);
-  &.menu-open {
+  &.menu-open,
+  &.modal-open {
     overflow: hidden;
-
-    // background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   }
 }
 

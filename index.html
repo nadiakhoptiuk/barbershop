@@ -21,6 +21,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
+
   <body class="page">
     <!-- Header -->
     <header class="header" id="back-to-top">
@@ -75,7 +76,9 @@
             <a href="tel:+380441111111" class="header__tel"
               >+38 044 111 11 11</a
             >
-            <button class="header__btn" type="button">онлайн-запись</button>
+            <button class="header__btn" type="button" data-modal-open>
+              онлайн-запись
+            </button>
           </div>
 
           <div class="company-socials__wrap--menu">
@@ -400,7 +403,11 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="btn--dark about-us__btn" type="button">
+            <button
+              class="btn--dark about-us__btn"
+              type="button"
+              data-modal-open
+            >
               онлайн-запись
             </button>
           </div>
@@ -455,7 +462,7 @@
             </ul>
           </div>
 
-          <button class="btn--light prices__btn" type="button">
+          <button class="btn--light prices__btn" type="button" data-modal-open>
             онлайн-запись
           </button>
         </div>
@@ -1127,6 +1134,7 @@
           <!-- Booking section -->
           <section class="booking">
             <h2 class="booking__title">Онлайн-запись</h2>
+
             <form class="booking-form">
               <div class="booking-form__wrap">
                 <label class="booking-form__field booking-form__field--name">
@@ -1249,7 +1257,57 @@
       </div>
     </footer>
 
-    <script src="./js/mobile-menu.js"></script>
+    <!-- Modal window -->
+    <div class="modal is-hidden" data-modal>
+      <button class="modal-close" type="button" data-modal-close>
+        <svg class="modal-close-icon">
+          <use href="./images/sprite.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal__title">Заполните следующие поля:</h2>
+      <form class="booking-form">
+        <div class="booking-form__wrap">
+          <label class="booking-form__field booking-form__field--name">
+            <input
+              class="booking-form__input"
+              name="name"
+              type="text"
+              placeholder=" "
+            />
+            <span class="booking-form__label">имя*</span>
+          </label>
+
+          <label class="booking-form__field booking-form__field--tel">
+            <input
+              class="booking-form__input"
+              type="tel"
+              name="tel"
+              placeholder=" "
+            />
+            <span class="booking-form__label">телефон*</span>
+          </label>
+        </div>
+
+        <label class="booking-form__text-field">
+          <textarea
+            class="booking-form__textarea"
+            name="message"
+            placeholder="сообщение"
+          ></textarea>
+        </label>
+      </form>
+
+      <button class="booking__btn booking__btn--modal btn--light" type="submit">
+        отправить
+      </button>
+    </div>
+
+    <!-- Modal window -->
+    <script src="./js/modal.js" type="module"></script>
+
+    <!-- Mobile menu -->
+    <script src="./js/mobile-menu.js" type="module"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
