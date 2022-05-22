@@ -503,6 +503,13 @@ img {
 
 .header__tel {
   display: block;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.header__tel:hover, .header__tel:focus {
+  color: #ff6c00;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 767px) {
@@ -738,6 +745,7 @@ img {
 }
 
 .main-nav__link {
+  display: block;
   transform: scale(1);
   transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 }

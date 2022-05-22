@@ -31,6 +31,8 @@
 }
 
 .main-nav__link {
+  display: block;
+
   transform: scale(1);
   transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 
@@ -53,40 +55,4 @@
     letter-spacing: 0.1em;
     color: $lightTitleBtnColor;
   }
-
-  //     padding-top: 15px;
-  //   padding-bottom: 15px;
-  //   display: block;
 }
-
-// .main-nav {
-
-//     display: flex;
-////   font-size: 12px;
-//   line-height: 1.33;
-//   letter-spacing: 0.1em;
-// }
-
-// .main-nav__item {
-//     display: block;
-
-//     &:not(:last-child) {
-//         margin-right: 40px;
-//     }
-// }
-
-// .main-nav__link {
-//     display: block;
-//     padding-top: 15px;
-//     padding-bottom: 15px;
-
-//     transform: scale(1);
-
-//     transition: transform 300ms ease-in-out, color 300ms ease-in-out;
-
-//     &:hover,
-//     &:focus {
-//         color: $accentColor;
-//         transform: scale(1.2);
-//     }
-// }

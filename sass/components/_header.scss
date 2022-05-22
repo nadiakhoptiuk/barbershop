@@ -38,6 +38,15 @@
 .header__tel {
   display: block;
 
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transform: scale(1.2);
+  }
+
   @include media(767px, max-width) {
     font-size: 18px;
     line-height: 1.39;
