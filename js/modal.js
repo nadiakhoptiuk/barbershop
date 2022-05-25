@@ -17,5 +17,17 @@
     document.body.classList.toggle("modal-open");
     refs.modal.classList.toggle("is-hidden");
     refs.backdrop.classList.toggle("is-hidden");
+
+    if (document.body.classList.contains("modal-open")) {
+      window.addEventListener("keydown", onEscKeyPress);
+    } else {
+      window.removeEventListener("keydown", onEscKeyPress);
+    }
+  }
+
+  function onEscKeyPress(event) {
+    if (event.code === "Escape") {
+      toggleModal();
+    }
   }
 })();
