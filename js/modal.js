@@ -4,7 +4,7 @@
     openModalBtnSecond: document.querySelector("[data-modal-open-second]"),
     openModalBtnThird: document.querySelector("[data-modal-open-third]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
-    backdropRef: document.querySelector("[data-overlay-modal]"),
+    backdrop: document.querySelector("[data-overlay-modal]"),
     modal: document.querySelector("[data-modal]"),
   };
 
@@ -16,6 +16,6 @@
   function toggleModal() {
     document.body.classList.toggle("modal-open");
     refs.modal.classList.toggle("is-hidden");
-    refs.backdropRef.classList.toggle("is-hidden");
+    refs.backdrop.classList.toggle("is-hidden");
   }
 })();
